@@ -20,12 +20,12 @@ def fit_pair(df, log, stage, group, spec, sample, ctrl=None, yp="units", yo="ly"
     return out
 
 
-def commodity_frame(lo, hi, index_df, keep_commodities=None):
+def commodity_frame(lo, hi, index_df, keep_commodities=None, allow_test=False):
     """Commodity x week outcomes/controls merged with the fixed-weight price index."""
     cp = pd.read_parquet(C.PROCESSED_DIR / "panel_commodity.parquet",
                          columns=["commodity", "week", "units"] + COM_CTRL,
                          filters=[("week", ">=", lo), ("week", "<=", hi), ("non_merchandise", "==", 0)])
-    assert_weeks(cp, lo, hi)
+    assert_weeks(cp, lo, hi, allow_test=allow_test)
     cp = cp.merge(index_df, on=["commodity", "week"], how="inner")
     if keep_commodities is not None:
         cp = cp[cp.commodity.isin(keep_commodities)]

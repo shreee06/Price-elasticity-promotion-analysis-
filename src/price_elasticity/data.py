@@ -8,21 +8,23 @@ PANEL_COLS = ["product_id", "week", "units", "sales_value", "shelf_value", "shar
               "share_stores_mailer", "any_display", "any_mailer", "depth_max8", "depth_med13"]
 
 
-def assert_weeks(df, lo, hi, col="week"):
-    """Hard guard: every row must lie inside [lo, hi]; also never inside the test window."""
+def assert_weeks(df, lo, hi, col="week", allow_test=False):
+    """Hard guard: every row must lie inside [lo, hi]; also never inside the test window unless allow_test
+    (only the one-time test script sets it)."""
     w = df[col]
     assert len(df) == 0 or (w.min() >= lo and w.max() <= hi), f"weeks outside [{lo},{hi}]: {w.min()}..{w.max()}"
-    assert not ((w >= C.TEST_WEEKS[0]) & (w <= C.TEST_WEEKS[1])).any(), "TEST weeks reached estimation"
+    if not allow_test:
+        assert not ((w >= C.TEST_WEEKS[0]) & (w <= C.TEST_WEEKS[1])).any(), "TEST weeks reached estimation"
 
 
-def load_panel(lo, hi, path=None, merchandise_only=True):
+def load_panel(lo, hi, path=None, merchandise_only=True, allow_test=False):
     """Read panel rows with lo <= week <= hi (filter applied at read time, so other weeks are never loaded)."""
     path = path or (C.PROCESSED_DIR / "panel.parquet")
     flt = [("week", ">=", lo), ("week", "<=", hi)]
     if merchandise_only:
         flt.append(("non_merchandise", "==", 0))
     df = pd.read_parquet(path, columns=PANEL_COLS, filters=flt)
-    assert_weeks(df, lo, hi)
+    assert_weeks(df, lo, hi, allow_test=allow_test)
     return df
 
 

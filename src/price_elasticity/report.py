@@ -94,3 +94,58 @@ def render_validation(V):
     L += ["", f"{V['n_stable']} of {V['n_total']} compared coefficients are stable by the rule above.",
           "", f"Runtime {V['runtime_seconds']} s; peak memory {V['peak_memory_mb']} MB."]
     return "\n".join(L) + "\n"
+
+
+OOS_ROWS = [("corr_model", "Correlation, frozen elasticity"), ("corr_last_week", "Correlation, last week repeats"),
+            ("mae_model", "MAE, frozen elasticity"), ("mae_zero", "MAE, zero baseline"), ("mae_last_week", "MAE, last-week baseline"),
+            ("mae_gain_vs_zero", "MAE gain vs zero (positive = model better)"),
+            ("mae_gain_vs_last_week", "MAE gain vs last week (positive = model better)"),
+            ("dir_model", "Direction right, frozen elasticity"), ("dir_last_week", "Direction right, last week repeats")]
+GROUPS = [("all", "All"), ("promo_change_gt_10pct", "Promo change > 10%"), ("no_promo_change", "No promo change")]
+
+
+def _m(g, k, d=3):
+    if g.get("n_rows", 0) == 0 or k not in g["metrics"]:
+        return "n/a"
+    m = g["metrics"][k]
+    return f"{m['est']:.{d}f} ({m['ci_low']:.{d}f} to {m['ci_high']:.{d}f})"
+
+
+def render_oos(res, title, intro):
+    L = [f"# {title}", "", intro, "",
+         f"Weeks {res['weeks'][0]}-{res['weeks'][1]}. Frozen product elasticity {res['beta_product']:.3f}. {res['definition']}. "
+         f"Cluster bootstrap: {res['bootstrap']['B']} resamples, seed {res['bootstrap']['seed']}, no worker processes. Associations only.", ""]
+    for level in ["product", "commodity"]:
+        L += [f"## {level.capitalize()} level", f"Rows with a defined change: {res[level]['rows_with_defined_change']:,}; common sample: {res[level]['rows_common_sample']:,}.", "",
+              "| Metric | " + " | ".join(n for _, n in GROUPS) + " |", "|---|" + "---|" * len(GROUPS)]
+        L.append("| Rows (clusters) | " + " | ".join(f"{res[level][g].get('n_rows', 0):,} ({res[level][g].get('n_clusters', 0):,})" for g, _ in GROUPS) + " |")
+        for k, n in OOS_ROWS:
+            L.append(f"| {n} | " + " | ".join(_m(res[level][g], k) for g, _ in GROUPS) + " |")
+        L.append("")
+    return "\n".join(L)
+
+
+def render_test(rec):
+    v, t = rec["validation"], rec["test"]
+    L = ["# Test-week evaluation (weeks 94-101), validation alongside", "",
+         "Frozen estimates, evaluated once; protocol in `docs/test_protocol.md`. Nothing was changed after seeing these numbers. Associations only.", ""]
+    for level in ["product", "commodity"]:
+        L += [f"## {level.capitalize()} level, all rows", "",
+              "| Metric | Validation 86-93 | Test 94-101 |", "|---|---|---|"]
+        L.append(f"| Rows (clusters) | {v[level]['all']['n_rows']:,} ({v[level]['all']['n_clusters']:,}) | {t[level]['all']['n_rows']:,} ({t[level]['all']['n_clusters']:,}) |")
+        for k, n in OOS_ROWS:
+            L.append(f"| {n} | {_m(v[level]['all'], k)} | {_m(t[level]['all'], k)} |")
+        L += ["", f"Subgroups ({level}): promo change > 10% vs no promo change", "",
+              "| Metric | Val, promo | Test, promo | Val, no promo | Test, no promo |", "|---|---|---|---|---|"]
+        for k in ["corr_model", "mae_gain_vs_zero", "mae_gain_vs_last_week", "dir_model"]:
+            n = dict(OOS_ROWS)[k]
+            L.append(f"| {n} | {_m(v[level]['promo_change_gt_10pct'], k)} | {_m(t[level]['promo_change_gt_10pct'], k)} | "
+                     f"{_m(v[level]['no_promo_change'], k)} | {_m(t[level]['no_promo_change'], k)} |")
+        L.append("")
+    L += ["## Primary coefficients re-estimated on the 8 test weeks (same products) vs train", "",
+          "| Coefficient | Train | Validation | Test | Test vs train (z) | Verdict (test) |", "|---|---|---|---|---|---|"]
+    for sv, st in zip(rec["stability_validation"]["comparison"], rec["stability_test"]["comparison"]):
+        L.append(f"| {st['name']} | {st['train']:.3f} ({st['train_lo']:.3f} to {st['train_hi']:.3f}) | {sv['window']:.3f} ({sv['window_lo']:.3f} to {sv['window_hi']:.3f}) | "
+                 f"{st['window']:.3f} ({st['window_lo']:.3f} to {st['window_hi']:.3f}) | {st['z']:+.2f} | {st['verdict']} |")
+    L += ["", f"Run record: `evals/results/test_run_record.json`. Runtime {rec['runtime_seconds']} s; peak memory {rec['peak_memory_mb']} MB."]
+    return "\n".join(L) + "\n"
