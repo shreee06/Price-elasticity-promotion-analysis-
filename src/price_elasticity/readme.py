@@ -151,8 +151,8 @@ def render():
              "Results page: primary and split elasticities and median shrunk elasticity by department (screenshot of the local Streamlit app, which reads only committed result files)."),
             ("results_out_of_sample.png", "Results page: out-of-sample validation and test table",
              "Out-of-sample check on validation and test weeks (screenshot of the local Streamlit app, which reads only committed result files)."),
-            ("whatif_simulator.png", "What-if page: not-reliable flag, elasticity interval and ranked commodities",
-             "What-if page: elasticity interval and the not-reliable flag for a commodity, and the most reliable commodities at 20% depth (screenshot of the local Streamlit app, which reads only committed result files).")]:
+            ("whatif_simulator.png", "What-if page: units and revenue interval for a reliable commodity",
+             "What-if page: the interval for the predicted change in units and revenue for a reliable commodity at a small discount, and the most reliable commodities at 20% depth (screenshot of the local Streamlit app, which reads only committed result files).")]:
         a(f"![{alt}](docs/images/{img})")
         a("")
         a(f"*{cap}*")

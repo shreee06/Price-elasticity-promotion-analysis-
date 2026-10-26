@@ -83,9 +83,9 @@ For a commodity (anonymised label) and a discount depth inside its observed 5th-
 
 *Out-of-sample check on validation and test weeks (screenshot of the local Streamlit app, which reads only committed result files).*
 
-![What-if page: not-reliable flag, elasticity interval and ranked commodities](docs/images/whatif_simulator.png)
+![What-if page: units and revenue interval for a reliable commodity](docs/images/whatif_simulator.png)
 
-*What-if page: elasticity interval and the not-reliable flag for a commodity, and the most reliable commodities at 20% depth (screenshot of the local Streamlit app, which reads only committed result files).*
+*What-if page: the interval for the predicted change in units and revenue for a reliable commodity at a small discount, and the most reliable commodities at 20% depth (screenshot of the local Streamlit app, which reads only committed result files).*
 
 ## Limitations
 
