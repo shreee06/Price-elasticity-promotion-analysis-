@@ -85,7 +85,7 @@ For a commodity (anonymised label) and a discount depth inside its observed 5th-
 
 ![What-if page: units and revenue interval for a reliable commodity](docs/images/whatif_simulator.png)
 
-*What-if page: the interval for the predicted change in units and revenue for a reliable commodity at a small discount, and the most reliable commodities at 20% depth (screenshot of the local Streamlit app, which reads only committed result files).*
+*What-if page: produce commodity C009 at a 20% discount (inside its observed range of 0.4% to 20.6%): units +13.3% (interval +3.5% to +23.9%) and revenue -9.4% (interval -17.2% to -0.8%), with the most reliable commodities at 20% depth below (screenshot of the local Streamlit app, which reads only committed result files).*
 
 ## Limitations
 
