@@ -1,0 +1,11 @@
+{
+  "rows_total": 2595732,
+  "quantity_le_0": 14466,
+  "sales_value_le_0": 18850,
+  "both": 14399,
+  "rows_dropped": 18917,
+  "units_dropped": 4544,
+  "sales_value_dropped": 19.280000000000015,
+  "rows_kept": 2576815,
+  "rows_without_commodity": 0
+}

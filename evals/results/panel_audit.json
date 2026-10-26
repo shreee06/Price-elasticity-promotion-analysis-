@@ -1,0 +1,525 @@
+{
+  "source": {
+    "rows": 2595732,
+    "households": 2500,
+    "products": 92339,
+    "stores": 582,
+    "weeks": 102,
+    "day_min": 1,
+    "day_max": 711,
+    "total_units": 260685622,
+    "total_sales_value": 8057463.08
+  },
+  "sign_conventions": {
+    "RETAIL_DISC": {
+      "negative": 1303026,
+      "zero": 1292670,
+      "positive": 36,
+      "min": -180.0,
+      "max": 3.99
+    },
+    "COUPON_MATCH_DISC": {
+      "negative": 17449,
+      "zero": 2578283,
+      "positive": 0,
+      "min": -7.7,
+      "max": 0.0
+    },
+    "COUPON_DISC": {
+      "negative": 36422,
+      "zero": 2559310,
+      "positive": 0,
+      "min": -55.93,
+      "max": 0.0
+    }
+  },
+  "cleaning": {
+    "rows_total": 2595732,
+    "quantity_le_0": 14466,
+    "sales_value_le_0": 18850,
+    "both": 14399,
+    "rows_dropped": 18917,
+    "units_dropped": 4544,
+    "sales_value_dropped": 19.280000000000015,
+    "rows_kept": 2576815
+  },
+  "price_definition_check": {
+    "coupon_rows_total": 31424,
+    "coupon_rows_with_noncoupon_reference": 1629,
+    "shelf_formula_median_ratio_to_noncoupon_shelf": 1.0,
+    "shelf_formula_share_within_1pct": 0.996316758747698,
+    "user_paid_formula_median_ratio_to_noncoupon_shelf": 1.1839464882943143,
+    "user_paid_formula_share_within_1pct": 0.0,
+    "coupon_rows_where_user_paid_formula_exceeds_shelf": 31424,
+    "adopted_paid_price_nonpositive_rows": 2728
+  },
+  "sample_note": "Only 2,500 sampled households: all units/values are sample counts, not store totals.",
+  "non_merchandise": {
+    "product_rows": 3599,
+    "products": 624,
+    "share_of_panel_units": 0.9871901020756098,
+    "share_of_panel_sales_value": 0.08459023815965058,
+    "commodity_rows": 443,
+    "definition": "fuel (QUANTITY in thousandths of gallons), coupon and placeholder commodities"
+  },
+  "reconciliation": {
+    "product_panel": {
+      "rows": 1073034,
+      "units_panel": 260681078,
+      "units_source_clean": 260681078,
+      "units_exact_match": true,
+      "sales_cents_panel": 805744380,
+      "sales_cents_source_clean": 805744380,
+      "sales_exact_match_to_cent": true,
+      "sales_abs_diff": 1.862645149230957e-09,
+      "units_plus_dropped_equals_source_total": true
+    },
+    "commodity_panel": {
+      "rows": 27453,
+      "units_panel": 260681078,
+      "units_source_clean": 260681078,
+      "units_exact_match": true,
+      "sales_cents_panel": 805744380,
+      "sales_cents_source_clean": 805744380,
+      "sales_exact_match_to_cent": true,
+      "sales_abs_diff": 0.0,
+      "units_plus_dropped_equals_source_total": true
+    }
+  },
+  "panel": {
+    "product_rows": 1073034,
+    "commodity_rows": 27453,
+    "products": 91905,
+    "commodities": 307,
+    "weeks": 102,
+    "analysis_universe": {
+      "product_rows": 1069435,
+      "commodity_rows": 27010,
+      "products": 91281,
+      "commodities": 302
+    },
+    "active_weeks_products": {
+      "p25": 1.0,
+      "p50": 3.0,
+      "p75": 11.0,
+      "p95": 62.0,
+      "mean": 11.715855435413722,
+      "n": 91281
+    },
+    "products_ge_30_active_weeks": 11859,
+    "commodities_ge_30_active_weeks": 284,
+    "reference_null_rows": {
+      "max8": {
+        "product": 495867,
+        "commodity": 1689
+      },
+      "med13": {
+        "product": 506610,
+        "commodity": 2199
+      }
+    },
+    "commodities_spanning_multiple_departments": 36,
+    "commodity_placeholder_names_present": [
+      "COUPON",
+      "COUPON/MISC ITEMS",
+      "COUPONS/STORE & MFG",
+      "FUEL",
+      "NO COMMODITY DESCRIPTION"
+    ],
+    "causal_duplicate_guard_ok": true,
+    "selling_cells_without_causal_record_share": 0.7948240874702998
+  },
+  "descriptives_train_weeks": {
+    "product": {
+      "train_rows": 871163,
+      "share_rows_retail_discount": 0.44885285532099045,
+      "share_units_sold_with_retail_discount": 0.5192224228597473,
+      "share_rows_any_display": 0.09562848743576116,
+      "share_rows_any_mailer": 0.07253866383214164,
+      "share_rows_any_coupon": 0.024923005224051067,
+      "share_units_with_coupon": 0.012925571672521702,
+      "avg_retail_disc_depth_when_discounted": {
+        "p5": 0.05072463768115941,
+        "p25": 0.13071895424836602,
+        "p50": 0.21630094043887146,
+        "p75": 0.32885906040268453,
+        "p95": 0.4957983193277311,
+        "p99": 0.5702005730659025,
+        "mean": 0.23356625921970142,
+        "n": 391024
+      },
+      "depth_max8": {
+        "null_rows": 411560,
+        "dist": {
+          "p5": 0.0,
+          "p25": 0.0,
+          "p50": 0.0,
+          "p75": 1.1102230246251565e-16,
+          "p95": 0.20055710306406682,
+          "p99": 0.4983277591973244,
+          "mean": 0.026052656688595046,
+          "n": 459603
+        },
+        "share_gt_0": 0.29439538036087665,
+        "share_gt_threshold": 0.07916397412549527
+      },
+      "depth_med13": {
+        "null_rows": 423139,
+        "dist": {
+          "p5": 0.0,
+          "p25": 0.0,
+          "p50": 0.0,
+          "p75": 0.0,
+          "p95": 0.08143322475570036,
+          "p99": 0.35103244837758096,
+          "mean": 0.013689424182219878,
+          "n": 448024
+        },
+        "share_gt_0": 0.1424655822009535,
+        "share_gt_threshold": 0.04477438708640608
+      },
+      "within_entity_price_variation": {
+        "entities": 9948,
+        "cv_of_weekly_shelf_price": {
+          "p5": 0.0,
+          "p25": 5.728837356000705e-17,
+          "p50": 0.031593754876890805,
+          "p75": 0.07855361110434425,
+          "p95": 0.2201933035844268,
+          "p99": 0.37688225202513626,
+          "mean": 0.05901281115892053,
+          "n": 9948
+        },
+        "max_over_min_minus_1": {
+          "p5": 0.0,
+          "p25": 2.220446049250313e-16,
+          "p50": 0.10101010101010122,
+          "p75": 0.345,
+          "p95": 1.2620087336244539,
+          "p99": 6.348659394792426,
+          "mean": 0.5937587966391786,
+          "n": 9948
+        },
+        "share_entities_cv_gt_5pct": 0.36921994370727784
+      },
+      "usable": {
+        "definition": ">= 8 train weeks with depth > 10% AND >= 8 train weeks with non-null depth <= 10%; entity also needs >= 30 active train weeks",
+        "max8": {
+          "without_active_weeks_requirement": 1184,
+          "with_active_weeks_requirement": 1160,
+          "share_of_units_in_usable_entities": 0.249740496646092,
+          "entities_total": 82667,
+          "overlap": {
+            "any_display": {
+              "rows_flagged": 62571,
+              "share_flagged_rows_with_price_cut": 0.05363507055984402,
+              "share_unflagged_rows_with_price_cut": 0.08318724939047734,
+              "share_cut_rows_with_flag": 0.09223834652594547
+            },
+            "any_mailer": {
+              "rows_flagged": 42796,
+              "share_flagged_rows_with_price_cut": 0.0870174782689971,
+              "share_unflagged_rows_with_price_cut": 0.07835760915723584,
+              "share_cut_rows_with_flag": 0.10235268249780123
+            },
+            "either_display_or_mailer": {
+              "share_flagged_rows_with_price_cut": 0.07344737390338187,
+              "share_unflagged_rows_with_price_cut": 0.08048745850091506,
+              "share_cut_rows_with_flag": 0.17441732629727352
+            },
+            "display_and_mailer_both_share_of_flagged": 0.2194972338603273,
+            "retail_discount_flag_vs_cut": {
+              "share_cut_rows_with_retail_discount": 0.2809476693051891
+            }
+          },
+          "naive_promoted_vs_not": {
+            "label": "NAIVE descriptive comparison, NOT an elasticity and not a causal effect; promoted = price cut > threshold OR display OR mailer",
+            "entities": 1160,
+            "rows_promoted": 36622,
+            "rows_not_promoted": 32631,
+            "mean_units_promoted_pooled": 11.710638414068047,
+            "mean_units_not_promoted_pooled": 7.022279427538231,
+            "within_entity_ratio_mean_units_promoted_over_not": {
+              "p25": 1.0344420943411285,
+              "p50": 1.2757047071702243,
+              "p75": 1.6666177334116266,
+              "mean": 1.4991673781213368,
+              "n": 1158
+            }
+          }
+        },
+        "med13": {
+          "without_active_weeks_requirement": 624,
+          "with_active_weeks_requirement": 613,
+          "share_of_units_in_usable_entities": 0.12877045006270485,
+          "entities_total": 82667,
+          "overlap": {
+            "any_display": {
+              "rows_flagged": 60796,
+              "share_flagged_rows_with_price_cut": 0.03850582275149681,
+              "share_unflagged_rows_with_price_cut": 0.04575857117770409,
+              "share_cut_rows_with_flag": 0.1166999002991027
+            },
+            "any_mailer": {
+              "rows_flagged": 41927,
+              "share_flagged_rows_with_price_cut": 0.04522145634078279,
+              "share_unflagged_rows_with_price_cut": 0.04472822995491225,
+              "share_cut_rows_with_flag": 0.09451645064805583
+            },
+            "either_display_or_mailer": {
+              "share_flagged_rows_with_price_cut": 0.04384285085580388,
+              "share_unflagged_rows_with_price_cut": 0.04498957277215889,
+              "share_cut_rows_with_flag": 0.18374875373878366
+            },
+            "display_and_mailer_both_share_of_flagged": 0.22183102779727143,
+            "retail_discount_flag_vs_cut": {
+              "share_cut_rows_with_retail_discount": 0.2647058823529412
+            }
+          },
+          "naive_promoted_vs_not": {
+            "label": "NAIVE descriptive comparison, NOT an elasticity and not a causal effect; promoted = price cut > threshold OR display OR mailer",
+            "entities": 613,
+            "rows_promoted": 14468,
+            "rows_not_promoted": 21158,
+            "mean_units_promoted_pooled": 11.677771633950789,
+            "mean_units_not_promoted_pooled": 7.844645051517157,
+            "within_entity_ratio_mean_units_promoted_over_not": {
+              "p25": 0.9307359307359307,
+              "p50": 1.1352040816326532,
+              "p75": 1.5476963011031797,
+              "mean": 1.4473100934698897,
+              "n": 613
+            }
+          }
+        }
+      }
+    },
+    "commodity": {
+      "train_rows": 22232,
+      "share_rows_retail_discount": 0.7368657790572148,
+      "share_units_sold_with_retail_discount": 0.5192224228597473,
+      "share_rows_any_display": 0.499730118747751,
+      "share_rows_any_mailer": 0.2993882691615689,
+      "share_rows_any_coupon": 0.2965994962216625,
+      "share_units_with_coupon": 0.012925571672521702,
+      "avg_retail_disc_depth_when_discounted": {
+        "p5": 0.008045246555210144,
+        "p25": 0.056688039712575994,
+        "p50": 0.11405554909355578,
+        "p75": 0.18330285105163405,
+        "p95": 0.30152497244895626,
+        "p99": 0.4176971134954837,
+        "mean": 0.1292556463923383,
+        "n": 16382
+      },
+      "depth_max8": {
+        "null_rows": 1401,
+        "dist": {
+          "p5": 0.0,
+          "p25": 0.047565271188669545,
+          "p50": 0.12781171454933038,
+          "p75": 0.2556316034647957,
+          "p95": 0.6002400960384153,
+          "p99": 0.8128381096408318,
+          "mean": 0.18294149522302167,
+          "n": 20831
+        },
+        "share_gt_0": 0.872929768134031,
+        "share_gt_threshold": 0.580000960107532
+      },
+      "depth_med13": {
+        "null_rows": 1908,
+        "dist": {
+          "p5": 0.0,
+          "p25": 0.0,
+          "p50": 0.0,
+          "p75": 0.07285040626166686,
+          "p95": 0.2808571632113952,
+          "p99": 0.5546325545238171,
+          "mean": 0.05884794328705155,
+          "n": 20324
+        },
+        "share_gt_0": 0.4888801417043889,
+        "share_gt_threshold": 0.19459752017319426
+      },
+      "within_entity_price_variation": {
+        "entities": 279,
+        "cv_of_weekly_shelf_price": {
+          "p5": 0.054028097158437954,
+          "p25": 0.08465862040807311,
+          "p50": 0.14502239987361834,
+          "p75": 0.2954327833777747,
+          "p95": 0.7970844263280968,
+          "p99": 1.0583036388803353,
+          "mean": 0.24017011203218916,
+          "n": 279
+        },
+        "max_over_min_minus_1": {
+          "p5": 0.3176719111192534,
+          "p25": 0.5554981381025671,
+          "p50": 1.211393081680963,
+          "p75": 3.8165899666890897,
+          "p95": 29.44999999999985,
+          "p99": 84.83253333333255,
+          "mean": 6.80469179661394,
+          "n": 279
+        },
+        "share_entities_cv_gt_5pct": 0.967741935483871
+      },
+      "usable": {
+        "definition": ">= 8 train weeks with depth > 10% AND >= 8 train weeks with non-null depth <= 10%; entity also needs >= 30 active train weeks",
+        "max8": {
+          "without_active_weeks_requirement": 262,
+          "with_active_weeks_requirement": 262,
+          "share_of_units_in_usable_entities": 0.9829618302370542,
+          "entities_total": 300,
+          "overlap": {
+            "any_display": {
+              "rows_flagged": 11076,
+              "share_flagged_rows_with_price_cut": 0.5001805706031058,
+              "share_unflagged_rows_with_price_cut": 0.6706304459251666,
+              "share_cut_rows_with_flag": 0.45853335540473433
+            },
+            "any_mailer": {
+              "rows_flagged": 6641,
+              "share_flagged_rows_with_price_cut": 0.47944586658635746,
+              "share_unflagged_rows_with_price_cut": 0.627061310782241,
+              "share_cut_rows_with_flag": 0.2635325277271975
+            },
+            "either_display_or_mailer": {
+              "share_flagged_rows_with_price_cut": 0.5122716665325501,
+              "share_unflagged_rows_with_price_cut": 0.6801523084245598,
+              "share_cut_rows_with_flag": 0.5268995199470287
+            },
+            "display_and_mailer_both_share_of_flagged": 0.42568600627665565,
+            "retail_discount_flag_vs_cut": {
+              "share_cut_rows_with_retail_discount": 0.7022016222479722
+            }
+          },
+          "naive_promoted_vs_not": {
+            "label": "NAIVE descriptive comparison, NOT an elasticity and not a causal effect; promoted = price cut > threshold OR display OR mailer",
+            "entities": 262,
+            "rows_promoted": 17591,
+            "rows_not_promoted": 2581,
+            "mean_units_promoted_pooled": 142.4566539707805,
+            "mean_units_not_promoted_pooled": 54.598217745060055,
+            "within_entity_ratio_mean_units_promoted_over_not": {
+              "p25": 1.0652329657395798,
+              "p50": 1.2977999471458774,
+              "p75": 2.176767676767677,
+              "mean": 1.7426789046946027,
+              "n": 245
+            }
+          }
+        },
+        "med13": {
+          "without_active_weeks_requirement": 198,
+          "with_active_weeks_requirement": 198,
+          "share_of_units_in_usable_entities": 0.5190775065995897,
+          "entities_total": 300,
+          "overlap": {
+            "any_display": {
+              "rows_flagged": 11054,
+              "share_flagged_rows_with_price_cut": 0.1496290935407997,
+              "share_unflagged_rows_with_price_cut": 0.2482200647249191,
+              "share_cut_rows_with_flag": 0.418204804045512
+            },
+            "any_mailer": {
+              "rows_flagged": 6632,
+              "share_flagged_rows_with_price_cut": 0.13344390832328107,
+              "share_unflagged_rows_with_price_cut": 0.22421852176453402,
+              "share_cut_rows_with_flag": 0.22376738305941846
+            },
+            "either_display_or_mailer": {
+              "share_flagged_rows_with_price_cut": 0.15336236090953073,
+              "share_unflagged_rows_with_price_cut": 0.2591517293612724,
+              "share_cut_rows_with_flag": 0.4809102402022756
+            },
+            "display_and_mailer_both_share_of_flagged": 0.4260603128527657,
+            "retail_discount_flag_vs_cut": {
+              "share_cut_rows_with_retail_discount": 0.6199747155499368
+            }
+          },
+          "naive_promoted_vs_not": {
+            "label": "NAIVE descriptive comparison, NOT an elasticity and not a causal effect; promoted = price cut > threshold OR display OR mailer",
+            "entities": 198,
+            "rows_promoted": 9715,
+            "rows_not_promoted": 4577,
+            "mean_units_promoted_pooled": 127.27750900669068,
+            "mean_units_not_promoted_pooled": 32.743063141795936,
+            "within_entity_ratio_mean_units_promoted_over_not": {
+              "p25": 1.1104699256425248,
+              "p50": 1.3162014230979748,
+              "p75": 1.8715780667105553,
+              "mean": 1.6092991935937666,
+              "n": 198
+            }
+          }
+        }
+      }
+    }
+  },
+  "weekly_volume": {
+    "note": "Dataset has no calendar dates (only DAY 1..711), so holidays cannot be dated without an assumed anchor; peaks/troughs are reported by WEEK_NO and recurrence one year (52 weeks) apart.",
+    "full_weeks_mean_units": 33085.99,
+    "full_weeks_cv": 0.24266524271717338,
+    "mean_units_first_year_weeks_2_53": 29935.096153846152,
+    "mean_units_second_year_weeks_54_101": 36499.458333333336,
+    "active_households_weeks_2_7_mean": 327.8333333333333,
+    "active_households_weeks_30_60_mean": 1306.6774193548388,
+    "units_per_household_weeks_2_7_mean": 25.677915226554536,
+    "units_per_household_weeks_30_60_mean": 27.540355723739477,
+    "lowest6_weeks_raw": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "corr_raw_w_vs_w_plus_52": 0.10414725792483186,
+    "pairs_raw": 48,
+    "corr_detrended_w_vs_w_plus_52": 0.511897402479592,
+    "pairs_detrended": 36,
+    "top6_detrended_weeks": [
+      20,
+      16,
+      72,
+      92,
+      59,
+      42
+    ],
+    "top6_detrended_ratios": [
+      1.194,
+      1.18,
+      1.145,
+      1.14,
+      1.126,
+      1.125
+    ],
+    "bottom6_detrended_weeks": [
+      9,
+      93,
+      48,
+      32,
+      78,
+      57
+    ],
+    "bottom6_detrended_ratios": [
+      0.813,
+      0.838,
+      0.898,
+      0.908,
+      0.913,
+      0.914
+    ],
+    "detrended_range": [
+      0.8131478639214981,
+      1.1942997511171969
+    ],
+    "top6_detrended_recurring_52_weeks_later_within_1": [
+      20
+    ]
+  },
+  "memory_peak_mb": 1571
+}

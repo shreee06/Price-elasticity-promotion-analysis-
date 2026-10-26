@@ -1,0 +1,22 @@
+{
+  "week_definition": "WEEK_NO = (DAY + 1) // 7 + 1; week 1 = days 1-5 and week 102 = days 706-711 are partial",
+  "first_full_week": 2,
+  "last_full_week": 101,
+  "train": [
+    1,
+    85
+  ],
+  "validation": [
+    86,
+    93
+  ],
+  "test": [
+    94,
+    101
+  ],
+  "partial_weeks_flagged": [
+    1,
+    102
+  ],
+  "note": "Inclusive WEEK_NO ranges. No model is evaluated on test weeks in step 1."
+}
