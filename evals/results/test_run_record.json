@@ -1,0 +1,14 @@
+{
+  "started": "2026-10-26T15:08:59",
+  "git_head": "14a513219bbd606d9fc921d0f9dcfa569ea501fa",
+  "git_dirty": false,
+  "protocol_sha256": "9d3ad7ec392f316b76ca41d41c0207ad8ee346517aa1b257f34a6f34516a2806",
+  "frozen_estimates_sha256": "611a3db49bff5aea63201e0ccfd0797cd480f0d5d2c0d94802533069a008db83",
+  "weeks": [
+    94,
+    101
+  ],
+  "command": "run_test_final.py --i-am-done-tuning",
+  "finished": "2026-10-26T15:09:05",
+  "result_file": "evals/results/test_final.json"
+}
