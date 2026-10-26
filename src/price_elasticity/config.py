@@ -36,3 +36,17 @@ DISCOUNT_DEPTH_THRESHOLD = 0.10
 # commodities. They stay in the panels (so totals reconcile) but carry non_merchandise=1 and are excluded from analyses.
 NON_MERCH_COMMODITIES = ("FUEL", "COUPON", "COUPON/MISC ITEMS", "COUPONS/STORE & MFG", "NO COMMODITY DESCRIPTION")
 FUEL_SUBCOMMODITY_PREFIX = "GASOLINE"
+
+# ---- Step 2 (see docs/analysis_plan.md) ----
+PRIMARY_WEEKS = (8, TRAIN_WEEKS[1])        # 8..85
+STARTUP_WEEKS = (FIRST_FULL_WEEK, 7)       # 2..7, sensitivity only
+BOOTSTRAP_B = 500
+BOOTSTRAP_SEED = 20240601
+MIN_ACTIVE_WEEKS_PRIMARY = 30
+MIN_PROMO_WEEKS = 8
+MIN_NONPROMO_WEEKS = 8
+PROMO_DEPTH = 0.10
+COMMODITY_MIN_ACTIVE_WEEKS = 60
+LOW_HOUSEHOLD_QUANTILE = 0.10
+HAC_LAGS = 4
+CONTROLS = ["any_display", "any_mailer", "share_stores_display", "share_stores_mailer", "share_units_coupon"]

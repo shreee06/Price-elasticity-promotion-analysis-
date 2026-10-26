@@ -1,0 +1,535 @@
+stage,group,spec,estimator,sample,n_obs,n_clusters,term,estimate,se,ci_low,ci_high,note
+train,primary_secondary,main:primary,ppml,weeks8-85 primary set,299480,5755.0,lp,-1.2535226959420256,0.0431064695339895,-1.338009823729318,-1.169035568154733,
+train,primary_secondary,main:primary,ppml,weeks8-85 primary set,299480,5755.0,any_display,0.3641835798269286,0.0221221107617775,0.3208250394718386,0.4075421201820186,
+train,primary_secondary,main:primary,ppml,weeks8-85 primary set,299480,5755.0,any_mailer,0.2786468094868038,0.0583656648553022,0.1642522084366762,0.3930414105369314,
+train,primary_secondary,main:primary,ppml,weeks8-85 primary set,299480,5755.0,share_stores_display,0.0764373493856961,0.0462128449605818,-0.0141381623601777,0.16701286113157,
+train,primary_secondary,main:primary,ppml,weeks8-85 primary set,299480,5755.0,share_stores_mailer,0.1118990334720297,0.0524957095502287,0.009009333410706,0.2147887335333533,
+train,primary_secondary,main:primary,ppml,weeks8-85 primary set,299480,5755.0,share_units_coupon,0.1740376456812086,0.0628494834832702,0.0508549216070539,0.2972203697553634,
+train,primary_secondary,main:primary,ols,weeks8-85 primary set,299480,5755.0,lp,-0.8972310840754707,0.0179198813948203,-0.932360795790874,-0.8621013723600675,
+train,primary_secondary,main:primary,ols,weeks8-85 primary set,299480,5755.0,any_display,0.8606322888564786,0.0135307045698426,0.8341070155931045,0.8871575621198526,
+train,primary_secondary,main:primary,ols,weeks8-85 primary set,299480,5755.0,any_mailer,0.6692901304671139,0.0680112546909943,0.5359624751072914,0.8026177858269364,
+train,primary_secondary,main:primary,ols,weeks8-85 primary set,299480,5755.0,share_stores_display,-0.7911904122982973,0.0234592914262704,-0.8371794524428777,-0.745201372153717,
+train,primary_secondary,main:primary,ols,weeks8-85 primary set,299480,5755.0,share_stores_mailer,-0.3995295697702581,0.068728440422262,-0.5342631790775836,-0.2647959604629326,
+train,primary_secondary,main:primary,ols,weeks8-85 primary set,299480,5755.0,share_units_coupon,0.0219361711410639,0.0131607522615655,-0.0038638563658298,0.0477361986479578,
+train,primary_secondary,main:secondary,ppml,weeks8-85 primary set,299480,5755.0,x_base,-0.7433260356957244,0.0676926771692402,-0.876001244964532,-0.6106508264269168,
+train,primary_secondary,main:secondary,ppml,weeks8-85 primary set,299480,5755.0,x_promo,-1.3925463692366744,0.0414865997609654,-1.4738586106091949,-1.3112341278641542,
+train,primary_secondary,main:secondary,ppml,weeks8-85 primary set,299480,5755.0,any_display,0.3546947467731767,0.0217066717687747,0.3121504518821458,0.3972390416642076,
+train,primary_secondary,main:secondary,ppml,weeks8-85 primary set,299480,5755.0,any_mailer,0.2737091508325559,0.0517510709697185,0.1722789155705313,0.3751393860945805,
+train,primary_secondary,main:secondary,ppml,weeks8-85 primary set,299480,5755.0,share_stores_display,0.0687217249187851,0.0454141151468466,-0.0202883051587892,0.1577317549963594,
+train,primary_secondary,main:secondary,ppml,weeks8-85 primary set,299480,5755.0,share_stores_mailer,0.0795772108815312,0.0474089482889957,-0.0133426203098222,0.1724970420728847,
+train,primary_secondary,main:secondary,ppml,weeks8-85 primary set,299480,5755.0,share_units_coupon,0.1479083797558918,0.0632216616206058,0.0239961999367262,0.2718205595750574,
+train,primary_secondary,main:secondary,ols,weeks8-85 primary set,299480,5755.0,x_base,-0.451707474793082,0.0309359089668391,-0.5123534991564545,-0.3910614504297095,
+train,primary_secondary,main:secondary,ols,weeks8-85 primary set,299480,5755.0,x_promo,-1.0163691191735456,0.0147979856626693,-1.0453787403225174,-0.9873594980245738,
+train,primary_secondary,main:secondary,ols,weeks8-85 primary set,299480,5755.0,any_display,0.8516645428973585,0.0132847145661061,0.8256215026201152,0.8777075831746017,
+train,primary_secondary,main:secondary,ols,weeks8-85 primary set,299480,5755.0,any_mailer,0.6632479049377691,0.0672397200391279,0.5314327478641432,0.795063062011395,
+train,primary_secondary,main:secondary,ols,weeks8-85 primary set,299480,5755.0,share_stores_display,-0.7943041476379553,0.0231003908152666,-0.8395896075120385,-0.7490186877638721,
+train,primary_secondary,main:secondary,ols,weeks8-85 primary set,299480,5755.0,share_stores_mailer,-0.4211775458930328,0.0679193559414463,-0.5543250451174715,-0.2880300466685941,
+train,primary_secondary,main:secondary,ols,weeks8-85 primary set,299480,5755.0,share_units_coupon,0.0039295990681777,0.0131579633523605,-0.0218649611270628,0.0297241592634184,
+train,bootstrap,primary_ppml,ppml,weeks8-85 primary set,299480,5755.0,lp,,0.0415766554,-1.3365177466,-1.1789557656,cluster bootstrap B=500/500 seed=20240601
+train,bootstrap,primary_ppml,ppml,weeks8-85 primary set,299480,5755.0,any_display,,0.0223842529,0.3226580321,0.4126300464,cluster bootstrap B=500/500 seed=20240601
+train,bootstrap,primary_ppml,ppml,weeks8-85 primary set,299480,5755.0,any_mailer,,0.0758746385,0.20479627,0.4723052844,cluster bootstrap B=500/500 seed=20240601
+train,bootstrap,primary_ppml,ppml,weeks8-85 primary set,299480,5755.0,share_stores_display,,0.0447616705,-0.0173699403,0.1561449055,cluster bootstrap B=500/500 seed=20240601
+train,bootstrap,primary_ppml,ppml,weeks8-85 primary set,299480,5755.0,share_stores_mailer,,0.0707986548,-0.0767364038,0.178506445,cluster bootstrap B=500/500 seed=20240601
+train,bootstrap,primary_ppml,ppml,weeks8-85 primary set,299480,5755.0,share_units_coupon,,0.0611241516,0.053891524,0.2935601435,cluster bootstrap B=500/500 seed=20240601
+train,bootstrap,primary_ols,ols,weeks8-85 primary set,299480,5755.0,lp,,0.017432781,-0.9313994186,-0.8615939326,cluster bootstrap B=500/500 seed=20240601
+train,bootstrap,primary_ols,ols,weeks8-85 primary set,299480,5755.0,any_display,,0.0139902361,0.8352946671,0.8892193114,cluster bootstrap B=500/500 seed=20240601
+train,bootstrap,primary_ols,ols,weeks8-85 primary set,299480,5755.0,any_mailer,,0.0696530475,0.5533806862,0.8242237426,cluster bootstrap B=500/500 seed=20240601
+train,bootstrap,primary_ols,ols,weeks8-85 primary set,299480,5755.0,share_stores_display,,0.0237429923,-0.8386034623,-0.74672311,cluster bootstrap B=500/500 seed=20240601
+train,bootstrap,primary_ols,ols,weeks8-85 primary set,299480,5755.0,share_stores_mailer,,0.0700997816,-0.5541184071,-0.2810370635,cluster bootstrap B=500/500 seed=20240601
+train,bootstrap,primary_ols,ols,weeks8-85 primary set,299480,5755.0,share_units_coupon,,0.0125808726,-0.0019142928,0.0461475024,cluster bootstrap B=500/500 seed=20240601
+train,bootstrap,secondary_ppml,ppml,weeks8-85 primary set,299480,5755.0,x_base,,0.0644999239,-0.8752645248,-0.6279489334,cluster bootstrap B=500/500 seed=20240601
+train,bootstrap,secondary_ppml,ppml,weeks8-85 primary set,299480,5755.0,x_promo,,0.0401373284,-1.4704357493,-1.3152297637,cluster bootstrap B=500/500 seed=20240601
+train,bootstrap,secondary_ppml,ppml,weeks8-85 primary set,299480,5755.0,any_display,,0.0219125871,0.3134294294,0.3996311851,cluster bootstrap B=500/500 seed=20240601
+train,bootstrap,secondary_ppml,ppml,weeks8-85 primary set,299480,5755.0,any_mailer,,0.0702697416,0.1994182906,0.4620749194,cluster bootstrap B=500/500 seed=20240601
+train,bootstrap,secondary_ppml,ppml,weeks8-85 primary set,299480,5755.0,share_stores_display,,0.0438851156,-0.0204293002,0.1460618777,cluster bootstrap B=500/500 seed=20240601
+train,bootstrap,secondary_ppml,ppml,weeks8-85 primary set,299480,5755.0,share_stores_mailer,,0.0671848557,-0.1027371819,0.1586834898,cluster bootstrap B=500/500 seed=20240601
+train,bootstrap,secondary_ppml,ppml,weeks8-85 primary set,299480,5755.0,share_units_coupon,,0.0615718405,0.0253855167,0.2642220788,cluster bootstrap B=500/500 seed=20240601
+train,robustness,placebo_matched_baseline,ppml,weeks8-83 with leads,175532,5754.0,lp,-1.3404171410564345,0.0510467566648993,-1.4404669456472172,-1.2403673364656518,
+train,robustness,placebo_matched_baseline,ppml,weeks8-83 with leads,175532,5754.0,any_display,0.2969843043745974,0.0208046656944157,0.2562079089031466,0.3377606998460483,
+train,robustness,placebo_matched_baseline,ppml,weeks8-83 with leads,175532,5754.0,any_mailer,0.1997011008481407,0.0307720856831131,0.1393889211800582,0.2600132805162232,
+train,robustness,placebo_matched_baseline,ppml,weeks8-83 with leads,175532,5754.0,share_stores_display,0.2039146408245067,0.0484603868113111,0.1089340279974569,0.2988952536515564,
+train,robustness,placebo_matched_baseline,ppml,weeks8-83 with leads,175532,5754.0,share_stores_mailer,0.1818091644121815,0.0334907401206914,0.1161685199600356,0.2474498088643273,
+train,robustness,placebo_matched_baseline,ppml,weeks8-83 with leads,175532,5754.0,share_units_coupon,0.2855338764512863,0.0907387114982786,0.1076892699110896,0.463378482991483,
+train,robustness,placebo_leads,ppml,weeks8-83 with leads,175532,5754.0,lp,-1.322974288510672,0.0548676598743279,-1.4305129257803484,-1.2154356512409958,
+train,robustness,placebo_leads,ppml,weeks8-83 with leads,175532,5754.0,lead1,-0.0184907323009732,0.0399924909667296,-0.0968745742478067,0.0598931096458602,
+train,robustness,placebo_leads,ppml,weeks8-83 with leads,175532,5754.0,lead2,-0.0567027749384601,0.0279355423436739,-0.1114554318206547,-0.0019501180562655,
+train,robustness,placebo_leads,ppml,weeks8-83 with leads,175532,5754.0,any_display,0.2973010085569594,0.0208470229477335,0.2564415943945216,0.3381604227193973,
+train,robustness,placebo_leads,ppml,weeks8-83 with leads,175532,5754.0,any_mailer,0.2014763533887077,0.0308929571800681,0.140927269939836,0.2620254368375794,
+train,robustness,placebo_leads,ppml,weeks8-83 with leads,175532,5754.0,share_stores_display,0.2030369825497618,0.0480764634310893,0.1088088457207697,0.2972651193787539,
+train,robustness,placebo_leads,ppml,weeks8-83 with leads,175532,5754.0,share_stores_mailer,0.1830869970845932,0.03288109016493,0.1186412445889161,0.2475327495802703,
+train,robustness,placebo_leads,ppml,weeks8-83 with leads,175532,5754.0,share_units_coupon,0.2875557866440939,0.0904787393585371,0.1102207161347744,0.4648908571534134,
+train,robustness,placebo_matched_baseline,ols,weeks8-83 with leads,175532,5754.0,lp,-1.0413185780965282,0.0236834700918644,-1.087747113210191,-0.9948900429828654,
+train,robustness,placebo_matched_baseline,ols,weeks8-83 with leads,175532,5754.0,any_display,0.7198841055734008,0.0146122791289052,0.6912385265262633,0.7485296846205383,
+train,robustness,placebo_matched_baseline,ols,weeks8-83 with leads,175532,5754.0,any_mailer,0.4826861871201577,0.0750570738900149,0.3355460097257815,0.629826364514534,
+train,robustness,placebo_matched_baseline,ols,weeks8-83 with leads,175532,5754.0,share_stores_display,-0.5799253318243366,0.0285661356150276,-0.6359257331725984,-0.5239249304760748,
+train,robustness,placebo_matched_baseline,ols,weeks8-83 with leads,175532,5754.0,share_stores_mailer,-0.186535592262445,0.0758886414131067,-0.3353059556808916,-0.0377652288439984,
+train,robustness,placebo_matched_baseline,ols,weeks8-83 with leads,175532,5754.0,share_units_coupon,0.0372266257690593,0.0211665538960662,-0.0042678041851189,0.0787210557232377,
+train,robustness,placebo_leads,ols,weeks8-83 with leads,175532,5754.0,lp,-1.0083324481559588,0.0249066837621887,-1.05715894347663,-0.9595059528352876,
+train,robustness,placebo_leads,ols,weeks8-83 with leads,175532,5754.0,lead1,-0.0730565858285088,0.0139830664401409,-0.1004686706579096,-0.045644500999108,
+train,robustness,placebo_leads,ols,weeks8-83 with leads,175532,5754.0,lead2,-0.0143421208145502,0.0107729210797543,-0.0354611098262113,0.0067768681971109,
+train,robustness,placebo_leads,ols,weeks8-83 with leads,175532,5754.0,any_display,0.71975626088271,0.0146009585185018,0.6911328745022546,0.7483796472631655,
+train,robustness,placebo_leads,ols,weeks8-83 with leads,175532,5754.0,any_mailer,0.4801750540528056,0.0751526634109557,0.3328474851396914,0.6275026229659199,
+train,robustness,placebo_leads,ols,weeks8-83 with leads,175532,5754.0,share_stores_display,-0.5807620042883228,0.0285572606823564,-0.6367450074208012,-0.5247790011558444,
+train,robustness,placebo_leads,ols,weeks8-83 with leads,175532,5754.0,share_stores_mailer,-0.1800024418177484,0.0759698480845235,-0.3289320009444555,-0.0310728826910413,
+train,robustness,placebo_leads,ols,weeks8-83 with leads,175532,5754.0,share_units_coupon,0.040421763747624,0.0210754925836113,-0.0008941516845519,0.0817376791798,
+train,robustness,include_startup_weeks_2_7:primary,ppml,include_startup_weeks_2_7,309325,5755.0,lp,-1.2496086714097514,0.0425664426489999,-1.3330373659517811,-1.1661799768677217,
+train,robustness,include_startup_weeks_2_7:primary,ppml,include_startup_weeks_2_7,309325,5755.0,any_display,0.3709001105481774,0.0218500446551673,0.3280748099634574,0.4137254111328974,
+train,robustness,include_startup_weeks_2_7:primary,ppml,include_startup_weeks_2_7,309325,5755.0,any_mailer,0.2880516619234996,0.0588050469928587,0.1727958877083109,0.4033074361386883,
+train,robustness,include_startup_weeks_2_7:primary,ppml,include_startup_weeks_2_7,309325,5755.0,share_stores_display,0.0654982889058337,0.0463833657268419,-0.025411437400526,0.1564080152121936,
+train,robustness,include_startup_weeks_2_7:primary,ppml,include_startup_weeks_2_7,309325,5755.0,share_stores_mailer,0.1041342029346895,0.0530311200555816,0.0001951175659298,0.2080732883034493,
+train,robustness,include_startup_weeks_2_7:primary,ppml,include_startup_weeks_2_7,309325,5755.0,share_units_coupon,0.1717982537111217,0.0620466161408971,0.0501891207123817,0.2934073867098617,
+train,robustness,include_startup_weeks_2_7:primary,ols,include_startup_weeks_2_7,309325,5755.0,lp,-0.8863758713643038,0.0178606912887452,-0.9213895481954906,-0.8513621945331171,
+train,robustness,include_startup_weeks_2_7:primary,ols,include_startup_weeks_2_7,309325,5755.0,any_display,0.8784753659422141,0.0129922144037992,0.8530057360660865,0.9039449958183416,
+train,robustness,include_startup_weeks_2_7:primary,ols,include_startup_weeks_2_7,309325,5755.0,any_mailer,0.6781037362617822,0.0670818213940444,0.5465981199579762,0.8096093525655882,
+train,robustness,include_startup_weeks_2_7:primary,ols,include_startup_weeks_2_7,309325,5755.0,share_stores_display,-0.8097156550746318,0.0231161954168305,-0.8550320979158722,-0.7643992122333915,
+train,robustness,include_startup_weeks_2_7:primary,ols,include_startup_weeks_2_7,309325,5755.0,share_stores_mailer,-0.4077899880994424,0.0678341212509571,-0.5407703952522839,-0.274809580946601,
+train,robustness,include_startup_weeks_2_7:primary,ols,include_startup_weeks_2_7,309325,5755.0,share_units_coupon,0.0228439411182945,0.0129247592423279,-0.0024934512544706,0.0481813334910596,
+train,robustness,include_startup_weeks_2_7:secondary,ppml,include_startup_weeks_2_7,309325,5755.0,x_base,-0.7461609279116042,0.0653258076598357,-0.8741971581858731,-0.6181246976373352,
+train,robustness,include_startup_weeks_2_7:secondary,ppml,include_startup_weeks_2_7,309325,5755.0,x_promo,-1.3865358802631145,0.0409031227302594,-1.4667045276696449,-1.3063672328565843,
+train,robustness,include_startup_weeks_2_7:secondary,ppml,include_startup_weeks_2_7,309325,5755.0,any_display,0.3626786054099787,0.0214532432473164,0.3206310212936613,0.4047261895262962,
+train,robustness,include_startup_weeks_2_7:secondary,ppml,include_startup_weeks_2_7,309325,5755.0,any_mailer,0.2829082936929423,0.0525571137829277,0.1798982435470301,0.3859183438388543,
+train,robustness,include_startup_weeks_2_7:secondary,ppml,include_startup_weeks_2_7,309325,5755.0,share_stores_display,0.058561437221192,0.0455545695129776,-0.0307238783554704,0.1478467527978545,
+train,robustness,include_startup_weeks_2_7:secondary,ppml,include_startup_weeks_2_7,309325,5755.0,share_stores_mailer,0.0722436817989191,0.0481028941043919,-0.022036258197833,0.1665236217956714,
+train,robustness,include_startup_weeks_2_7:secondary,ppml,include_startup_weeks_2_7,309325,5755.0,share_units_coupon,0.1460273446642584,0.0623644543213692,0.0237952602788814,0.2682594290496355,
+train,robustness,include_startup_weeks_2_7:secondary,ols,include_startup_weeks_2_7,309325,5755.0,x_base,-0.4751976273977758,0.031196221633299,-0.5363539625565784,-0.4140412922389732,
+train,robustness,include_startup_weeks_2_7:secondary,ols,include_startup_weeks_2_7,309325,5755.0,x_promo,-0.9971592693642232,0.0146988024861377,-1.0259744541594151,-0.9683440845690312,
+train,robustness,include_startup_weeks_2_7:secondary,ols,include_startup_weeks_2_7,309325,5755.0,any_display,0.8719633950440961,0.0127458533530667,0.8469767255458559,0.8969500645423364,
+train,robustness,include_startup_weeks_2_7:secondary,ols,include_startup_weeks_2_7,309325,5755.0,any_mailer,0.6730647960799908,0.0663951524467253,0.542905309342099,0.8032242828178826,
+train,robustness,include_startup_weeks_2_7:secondary,ols,include_startup_weeks_2_7,309325,5755.0,share_stores_display,-0.8136878396708072,0.0227927388055501,-0.8583701858204251,-0.7690054935211892,
+train,robustness,include_startup_weeks_2_7:secondary,ols,include_startup_weeks_2_7,309325,5755.0,share_stores_mailer,-0.4281283681383237,0.0671001860026938,-0.5596699859866379,-0.2965867502900096,
+train,robustness,include_startup_weeks_2_7:secondary,ols,include_startup_weeks_2_7,309325,5755.0,share_units_coupon,0.0060530349679104,0.0129210809710731,-0.0192771466088706,0.0313832165446916,
+train,robustness,drop_display_mailer_controls:primary,ppml,drop_display_mailer_controls,299480,5755.0,lp,-1.8014329109079492,0.0544724981898875,-1.908197045508052,-1.6946687763078463,
+train,robustness,drop_display_mailer_controls:primary,ppml,drop_display_mailer_controls,299480,5755.0,share_units_coupon,0.1204119406041107,0.0690569677101667,-0.0149372289893615,0.2557611101975829,
+train,robustness,drop_display_mailer_controls:primary,ols,drop_display_mailer_controls,299480,5755.0,lp,-1.280274509150157,0.0212551267100046,-1.3219425569092598,-1.2386064613910543,
+train,robustness,drop_display_mailer_controls:primary,ols,drop_display_mailer_controls,299480,5755.0,share_units_coupon,-0.0095012311580387,0.0141547646435358,-0.0372498970320508,0.0182474347159733,
+train,robustness,drop_display_mailer_controls:secondary,ppml,drop_display_mailer_controls,299480,5755.0,x_base,-0.990460013336416,0.0738042477928514,-1.1351136809164744,-0.8458063457563573,
+train,robustness,drop_display_mailer_controls:secondary,ppml,drop_display_mailer_controls,299480,5755.0,x_promo,-1.9603428890042456,0.0522989733984683,-2.062846993293662,-1.8578387847148288,
+train,robustness,drop_display_mailer_controls:secondary,ppml,drop_display_mailer_controls,299480,5755.0,share_units_coupon,0.0814210080889698,0.0693538190304996,-0.0545099794011179,0.2173519955790577,
+train,robustness,drop_display_mailer_controls:secondary,ols,drop_display_mailer_controls,299480,5755.0,x_base,-0.6164266302997701,0.0364783956944083,-0.6879380145746335,-0.5449152460249066,
+train,robustness,drop_display_mailer_controls:secondary,ols,drop_display_mailer_controls,299480,5755.0,x_promo,-1.416569686590416,0.017993374288834,-1.451843472037277,-1.381295901143555,
+train,robustness,drop_display_mailer_controls:secondary,ols,drop_display_mailer_controls,299480,5755.0,share_units_coupon,-0.0326101249336884,0.0141395702155063,-0.0603290040103107,-0.004891245857066,
+train,robustness,ref_max8_matched_baseline,ppml,rows with max8 reference,252704,5755.0,x_base,-0.7563605976727472,0.0673991360260416,-0.888460476872905,-0.6242607184725895,
+train,robustness,ref_max8_matched_baseline,ppml,rows with max8 reference,252704,5755.0,x_promo,-1.4268806574184574,0.0441426394905709,-1.513398641002512,-1.3403626738344028,
+train,robustness,ref_max8_matched_baseline,ppml,rows with max8 reference,252704,5755.0,any_display,0.3313748865374222,0.0211870845227777,0.2898489639353718,0.3729008091394725,
+train,robustness,ref_max8_matched_baseline,ppml,rows with max8 reference,252704,5755.0,any_mailer,0.2632621908524151,0.0498072015024227,0.1656418697369372,0.3608825119678929,
+train,robustness,ref_max8_matched_baseline,ppml,rows with max8 reference,252704,5755.0,share_stores_display,0.1098028320730287,0.0462077820871112,0.0192372433768156,0.2003684207692418,
+train,robustness,ref_max8_matched_baseline,ppml,rows with max8 reference,252704,5755.0,share_stores_mailer,0.0875304352082392,0.0462139540318483,-0.0030472502773731,0.1781081206938516,
+train,robustness,ref_max8_matched_baseline,ppml,rows with max8 reference,252704,5755.0,share_units_coupon,0.1784886646316961,0.0713434328197197,0.0386581057715925,0.3183192234917996,
+train,robustness,ref_max8,ppml,rows with max8 reference,252704,5755.0,x_base_r,-1.4058991207703948,0.045075042382194,-1.4942445804411115,-1.317553661099678,
+train,robustness,ref_max8,ppml,rows with max8 reference,252704,5755.0,x_promo_r,-0.645131375769365,0.0635850979061384,-0.7697558776188494,-0.5205068739198805,
+train,robustness,ref_max8,ppml,rows with max8 reference,252704,5755.0,any_display,0.3316089658334198,0.0210075643014335,0.2904348963997007,0.372783035267139,
+train,robustness,ref_max8,ppml,rows with max8 reference,252704,5755.0,any_mailer,0.273405786811796,0.051401338015689,0.1726610155438758,0.3741505580797161,
+train,robustness,ref_max8,ppml,rows with max8 reference,252704,5755.0,share_stores_display,0.1131521988306981,0.0459108952281766,0.02316849768548,0.2031358999759163,
+train,robustness,ref_max8,ppml,rows with max8 reference,252704,5755.0,share_stores_mailer,0.080108212228011,0.0464127319722726,-0.010859070861754,0.171075495317776,
+train,robustness,ref_max8,ppml,rows with max8 reference,252704,5755.0,share_units_coupon,0.1835988736363888,0.0710944060373092,0.0442563983009956,0.3229413489717819,
+train,robustness,ref_max8_matched_baseline,ols,rows with max8 reference,252704,5755.0,x_base,-0.4618049100479265,0.0351104863174344,-0.5306346771286171,-0.392975142967236,
+train,robustness,ref_max8_matched_baseline,ols,rows with max8 reference,252704,5755.0,x_promo,-1.0966156984038156,0.0165897254761663,-1.129137803911939,-1.064093592895692,
+train,robustness,ref_max8_matched_baseline,ols,rows with max8 reference,252704,5755.0,any_display,0.8010481441423942,0.0136636976681018,0.7742621543542259,0.8278341339305626,
+train,robustness,ref_max8_matched_baseline,ols,rows with max8 reference,252704,5755.0,any_mailer,0.6248166343876842,0.0667632429959893,0.4939355516416541,0.7556977171337143,
+train,robustness,ref_max8_matched_baseline,ols,rows with max8 reference,252704,5755.0,share_stores_display,-0.7301611705047073,0.0250696200724816,-0.7793070608461203,-0.6810152801632943,
+train,robustness,ref_max8_matched_baseline,ols,rows with max8 reference,252704,5755.0,share_stores_mailer,-0.3717066359958695,0.0675094957984825,-0.5040506550884523,-0.2393626169032867,
+train,robustness,ref_max8_matched_baseline,ols,rows with max8 reference,252704,5755.0,share_units_coupon,0.0084721354416635,0.0157493958448905,-0.0224026077294992,0.0393468786128263,
+train,robustness,ref_max8,ols,rows with max8 reference,252704,5755.0,x_base_r,-1.05524361049939,0.0167035618638786,-1.0879888781699714,-1.0224983428288088,
+train,robustness,ref_max8,ols,rows with max8 reference,252704,5755.0,x_promo_r,-0.427923872645774,0.0334390566829614,-0.4934770085971653,-0.3623707366943826,
+train,robustness,ref_max8,ols,rows with max8 reference,252704,5755.0,any_display,0.8022103650946126,0.0137141153926861,0.7753255375914522,0.8290951925977731,
+train,robustness,ref_max8,ols,rows with max8 reference,252704,5755.0,any_mailer,0.6262392024406455,0.0668917283645495,0.495106240016524,0.7573721648647669,
+train,robustness,ref_max8,ols,rows with max8 reference,252704,5755.0,share_stores_display,-0.7263290742194275,0.025173272449802,-0.7756781622301585,-0.6769799862086965,
+train,robustness,ref_max8,ols,rows with max8 reference,252704,5755.0,share_stores_mailer,-0.3657703794067379,0.067653680876176,-0.498397055515929,-0.2331437032975469,
+train,robustness,ref_max8,ols,rows with max8 reference,252704,5755.0,share_units_coupon,0.0160001320954773,0.0157110687167484,-0.014799475480039,0.0467997396709936,
+train,robustness,ref_med13_matched_baseline,ppml,rows with med13 reference,252442,5755.0,x_base,-0.7562995588024046,0.0725631834481044,-0.8985207849642622,-0.614078332640547,
+train,robustness,ref_med13_matched_baseline,ppml,rows with med13 reference,252442,5755.0,x_promo,-1.431227145095221,0.0443971347370826,-1.5182439301966753,-1.3442103599937667,
+train,robustness,ref_med13_matched_baseline,ppml,rows with med13 reference,252442,5755.0,any_display,0.3312549822407951,0.0212874429405397,0.2895323607543858,0.3729776037272043,
+train,robustness,ref_med13_matched_baseline,ppml,rows with med13 reference,252442,5755.0,any_mailer,0.2578037823190211,0.0511954795251046,0.1574624862785582,0.358145078359484,
+train,robustness,ref_med13_matched_baseline,ppml,rows with med13 reference,252442,5755.0,share_stores_display,0.1077709318987541,0.04628911781781,0.0170459280997151,0.1984959356977931,
+train,robustness,ref_med13_matched_baseline,ppml,rows with med13 reference,252442,5755.0,share_stores_mailer,0.0934266124708331,0.0479805685858272,-0.0006135739151421,0.1874667988568085,
+train,robustness,ref_med13_matched_baseline,ppml,rows with med13 reference,252442,5755.0,share_units_coupon,0.182508655619291,0.0712113389735802,0.0429369959402002,0.3220803152983818,
+train,robustness,ref_med13,ppml,rows with med13 reference,252442,5755.0,x_base_r,-1.4071295245598625,0.0454321046301013,-1.4961748133767163,-1.3180842357430085,
+train,robustness,ref_med13,ppml,rows with med13 reference,252442,5755.0,x_promo_r,-0.4233425359282429,0.0720837093282766,-0.5646240100837191,-0.2820610617727667,
+train,robustness,ref_med13,ppml,rows with med13 reference,252442,5755.0,any_display,0.3311320725089369,0.0210944307360484,0.2897877479919072,0.3724763970259666,
+train,robustness,ref_med13,ppml,rows with med13 reference,252442,5755.0,any_mailer,0.2551319074541336,0.0526896941778265,0.1518620045091638,0.3584018103991035,
+train,robustness,ref_med13,ppml,rows with med13 reference,252442,5755.0,share_stores_display,0.1112707766548313,0.0459809610640106,0.0211497489948319,0.2013918043148308,
+train,robustness,ref_med13,ppml,rows with med13 reference,252442,5755.0,share_stores_mailer,0.0990700199419014,0.0475047154964406,0.005962488473056,0.1921775514107468,
+train,robustness,ref_med13,ppml,rows with med13 reference,252442,5755.0,share_units_coupon,0.1882942491539975,0.0710717350933474,0.048996208052265,0.3275922902557299,
+train,robustness,ref_med13_matched_baseline,ols,rows with med13 reference,252442,5755.0,x_base,-0.4456248228014067,0.0354307474172812,-0.5150824221686731,-0.3761672234341404,
+train,robustness,ref_med13_matched_baseline,ols,rows with med13 reference,252442,5755.0,x_promo,-1.1015339984138557,0.0164701683689051,-1.1338217269962014,-1.0692462698315095,
+train,robustness,ref_med13_matched_baseline,ols,rows with med13 reference,252442,5755.0,any_display,0.7989862794165775,0.0137578921923925,0.7720156329105105,0.8259569259226446,
+train,robustness,ref_med13_matched_baseline,ols,rows with med13 reference,252442,5755.0,any_mailer,0.632709062930058,0.0678749424113802,0.4996486309396657,0.7657694949204503,
+train,robustness,ref_med13_matched_baseline,ols,rows with med13 reference,252442,5755.0,share_stores_display,-0.7283394871999744,0.02516291433615,-0.7776682694096517,-0.6790107049902971,
+train,robustness,ref_med13_matched_baseline,ols,rows with med13 reference,252442,5755.0,share_stores_mailer,-0.3819467433479259,0.0686014954959955,-0.5164314928238039,-0.2474619938720479,
+train,robustness,ref_med13_matched_baseline,ols,rows with med13 reference,252442,5755.0,share_units_coupon,0.0097680438202887,0.0155598194472525,-0.0207350582640646,0.040271145904642,
+train,robustness,ref_med13,ols,rows with med13 reference,252442,5755.0,x_base_r,-1.0499185656007262,0.0168939649238431,-1.0830370949273929,-1.0168000362740597,
+train,robustness,ref_med13,ols,rows with med13 reference,252442,5755.0,x_promo_r,-0.2492448033980284,0.0449009922905083,-0.3372676468615479,-0.161221959934509,
+train,robustness,ref_med13,ols,rows with med13 reference,252442,5755.0,any_display,0.8005540030046748,0.0138000587960989,0.7735006940858614,0.8276073119234882,
+train,robustness,ref_med13,ols,rows with med13 reference,252442,5755.0,any_mailer,0.635207345389821,0.0681232988180194,0.5016600413730085,0.7687546494066336,
+train,robustness,ref_med13,ols,rows with med13 reference,252442,5755.0,share_stores_display,-0.7242848956123459,0.0252694032923139,-0.7738224362534262,-0.6747473549712656,
+train,robustness,ref_med13,ols,rows with med13 reference,252442,5755.0,share_stores_mailer,-0.3750444417984834,0.0688559605897937,-0.5100280386266296,-0.2400608449703372,
+train,robustness,ref_med13,ols,rows with med13 reference,252442,5755.0,share_units_coupon,0.018184376187495,0.0155292239277713,-0.0122587471639929,0.0486274995389831,
+train,robustness,winsorise_units_p99:primary,ppml,units capped at p99 of product-weeks,299480,5755.0,lp,-1.0308829277310865,0.0280785372020006,-1.0859158493855756,-0.9758500060765968,
+train,robustness,winsorise_units_p99:primary,ppml,units capped at p99 of product-weeks,299480,5755.0,any_display,0.4512275844022376,0.0172827461776907,0.4173540243400165,0.4851011444644588,
+train,robustness,winsorise_units_p99:primary,ppml,units capped at p99 of product-weeks,299480,5755.0,any_mailer,0.3199408400280363,0.0631644437595445,0.1961408051558233,0.4437408749002494,
+train,robustness,winsorise_units_p99:primary,ppml,units capped at p99 of product-weeks,299480,5755.0,share_stores_display,-0.0821933737035075,0.0305001118419527,-0.1419724944381785,-0.0224142529688365,
+train,robustness,winsorise_units_p99:primary,ppml,units capped at p99 of product-weeks,299480,5755.0,share_stores_mailer,-0.031546832321696,0.0628888729165642,-0.1548067582664783,0.0917130936230863,
+train,robustness,winsorise_units_p99:primary,ppml,units capped at p99 of product-weeks,299480,5755.0,share_units_coupon,0.0651055658241232,0.0217856240658645,0.0224065272742996,0.1078046043739468,
+train,robustness,winsorise_units_p99:primary,ols,units capped at p99 of product-weeks,299480,5755.0,lp,-0.8755865705894482,0.0173873557077453,-0.909672331541126,-0.8415008096377704,
+train,robustness,winsorise_units_p99:primary,ols,units capped at p99 of product-weeks,299480,5755.0,any_display,0.8685546148652991,0.0128846802832455,0.8432957923361283,0.8938134373944698,
+train,robustness,winsorise_units_p99:primary,ols,units capped at p99 of product-weeks,299480,5755.0,any_mailer,0.6438536688213804,0.0699006948888728,0.5068219995792924,0.7808853380634684,
+train,robustness,winsorise_units_p99:primary,ols,units capped at p99 of product-weeks,299480,5755.0,share_stores_display,-0.8073619643857779,0.0218532099583228,-0.850202480401356,-0.7645214483701998,
+train,robustness,winsorise_units_p99:primary,ols,units capped at p99 of product-weeks,299480,5755.0,share_stores_mailer,-0.3902207056123096,0.070492289270641,-0.5284121224903376,-0.2520292887342815,
+train,robustness,winsorise_units_p99:primary,ols,units capped at p99 of product-weeks,299480,5755.0,share_units_coupon,0.0201997607696667,0.0128161209146244,-0.0049246595945575,0.0453241811338909,
+train,robustness,winsorise_units_p99:secondary,ppml,units capped at p99 of product-weeks,299480,5755.0,x_base,-0.5793850450641707,0.0418297584804435,-0.661369865167849,-0.4974002249604923,
+train,robustness,winsorise_units_p99:secondary,ppml,units capped at p99 of product-weeks,299480,5755.0,x_promo,-1.1555753281389929,0.0266255072416436,-1.207760363402725,-1.1033902928752608,
+train,robustness,winsorise_units_p99:secondary,ppml,units capped at p99 of product-weeks,299480,5755.0,any_display,0.4430809723054167,0.0169194619444217,0.409919436256554,0.4762425083542795,
+train,robustness,winsorise_units_p99:secondary,ppml,units capped at p99 of product-weeks,299480,5755.0,any_mailer,0.311335830895081,0.0626735036541572,0.1884980209479933,0.4341736408421687,
+train,robustness,winsorise_units_p99:secondary,ppml,units capped at p99 of product-weeks,299480,5755.0,share_stores_display,-0.0903175526349963,0.0302441872369694,-0.1495950703611425,-0.0310400349088502,
+train,robustness,winsorise_units_p99:secondary,ppml,units capped at p99 of product-weeks,299480,5755.0,share_stores_mailer,-0.0547489497695964,0.0623935974766109,-0.1770381536896431,0.0675402541504502,
+train,robustness,winsorise_units_p99:secondary,ppml,units capped at p99 of product-weeks,299480,5755.0,share_units_coupon,0.0416598923763607,0.0220512546171741,-0.0015597724872232,0.0848795572399447,
+train,robustness,winsorise_units_p99:secondary,ols,units capped at p99 of product-weeks,299480,5755.0,x_base,-0.4395223818267091,0.0301431967550436,-0.498614391916209,-0.3804303717372093,
+train,robustness,winsorise_units_p99:secondary,ols,units capped at p99 of product-weeks,299480,5755.0,x_promo,-0.992195050013264,0.0142656720732659,-1.0201611361897702,-0.964228963836758,
+train,robustness,winsorise_units_p99:secondary,ols,units capped at p99 of product-weeks,299480,5755.0,any_display,0.8597772733614588,0.0126377507894412,0.8350025255725306,0.884552021150387,
+train,robustness,winsorise_units_p99:secondary,ols,units capped at p99 of product-weeks,299480,5755.0,any_mailer,0.6379397326822407,0.069249216117829,0.502185207016677,0.7736942583478044,
+train,robustness,winsorise_units_p99:secondary,ols,units capped at p99 of product-weeks,299480,5755.0,share_stores_display,-0.810409588454668,0.0215211073754559,-0.8525990584203863,-0.7682201184889498,
+train,robustness,winsorise_units_p99:secondary,ols,units capped at p99 of product-weeks,299480,5755.0,share_stores_mailer,-0.4114090488328593,0.0698131662084087,-0.5482691289196516,-0.2745489687460669,
+train,robustness,winsorise_units_p99:secondary,ols,units capped at p99 of product-weeks,299480,5755.0,share_units_coupon,0.0025755067912785,0.0128160397885746,-0.0225487545353561,0.0276997681179131,
+train,robustness,drop_top1pct_volume_products:primary,ppml,dropped 58 products,295002,5697.0,lp,-1.1495445194690752,0.0292064288927526,-1.2067880682159005,-1.09230097072225,
+train,robustness,drop_top1pct_volume_products:primary,ppml,dropped 58 products,295002,5697.0,any_display,0.4646057480105452,0.0161756967959673,0.4329019648656093,0.4963095311554812,
+train,robustness,drop_top1pct_volume_products:primary,ppml,dropped 58 products,295002,5697.0,any_mailer,0.4330676079484999,0.0640574575187191,0.307517298270606,0.5586179176263939,
+train,robustness,drop_top1pct_volume_products:primary,ppml,dropped 58 products,295002,5697.0,share_stores_display,-0.0891912952895918,0.0324007399515817,-0.1526955786671401,-0.0256870119120434,
+train,robustness,drop_top1pct_volume_products:primary,ppml,dropped 58 products,295002,5697.0,share_stores_mailer,-0.0676271533620372,0.0652828618687226,-0.1955792114324369,0.0603249047083624,
+train,robustness,drop_top1pct_volume_products:primary,ppml,dropped 58 products,295002,5697.0,share_units_coupon,0.0840301600157262,0.0328254344725488,0.0196934906726509,0.1483668293588015,
+train,robustness,drop_top1pct_volume_products:primary,ols,dropped 58 products,295002,5697.0,lp,-0.8812403366427229,0.0177278800237745,-0.9159937278651008,-0.8464869454203451,
+train,robustness,drop_top1pct_volume_products:primary,ols,dropped 58 products,295002,5697.0,any_display,0.9015470087268732,0.0124958175293963,0.8770504510640188,0.9260435663897278,
+train,robustness,drop_top1pct_volume_products:primary,ols,dropped 58 products,295002,5697.0,any_mailer,0.7001826509520033,0.068493039083719,0.5659102292019778,0.8344550727020288,
+train,robustness,drop_top1pct_volume_products:primary,ols,dropped 58 products,295002,5697.0,share_stores_display,-0.8516713774198483,0.0218119786485571,-0.8944311561576819,-0.8089115986820148,
+train,robustness,drop_top1pct_volume_products:primary,ols,dropped 58 products,295002,5697.0,share_stores_mailer,-0.4418567253190354,0.0692777257489625,-0.5776674315468225,-0.3060460190912484,
+train,robustness,drop_top1pct_volume_products:primary,ols,dropped 58 products,295002,5697.0,share_units_coupon,0.0198342431190655,0.0129732328247851,-0.0055982302039774,0.0452667164421084,
+train,robustness,drop_top1pct_volume_products:secondary,ppml,dropped 58 products,295002,5697.0,x_base,-0.587629254511697,0.0466639223540973,-0.6790888617031015,-0.4961696473202925,
+train,robustness,drop_top1pct_volume_products:secondary,ppml,dropped 58 products,295002,5697.0,x_promo,-1.3047798433212947,0.0262817752854857,-1.3562911763306216,-1.2532685103119678,
+train,robustness,drop_top1pct_volume_products:secondary,ppml,dropped 58 products,295002,5697.0,any_display,0.4543157223049558,0.0154967726096694,0.423942606113397,0.4846888384965147,
+train,robustness,drop_top1pct_volume_products:secondary,ppml,dropped 58 products,295002,5697.0,any_mailer,0.4283493964043612,0.066911817210738,0.2972046445311872,0.5594941482775352,
+train,robustness,drop_top1pct_volume_products:secondary,ppml,dropped 58 products,295002,5697.0,share_stores_display,-0.0999448133132126,0.0312900935695894,-0.1612722697824964,-0.0386173568439289,
+train,robustness,drop_top1pct_volume_products:secondary,ppml,dropped 58 products,295002,5697.0,share_stores_mailer,-0.1021084005465415,0.0678894149793467,-0.2351692088375553,0.0309524077444721,
+train,robustness,drop_top1pct_volume_products:secondary,ppml,dropped 58 products,295002,5697.0,share_units_coupon,0.0535224635666109,0.0331926150540987,-0.0115338664921245,0.1185787936253464,
+train,robustness,drop_top1pct_volume_products:secondary,ols,dropped 58 products,295002,5697.0,x_base,-0.4291187577786827,0.0303675744734655,-0.4886507601803065,-0.369586755377059,
+train,robustness,drop_top1pct_volume_products:secondary,ols,dropped 58 products,295002,5697.0,x_promo,-1.0013040725452451,0.0146121997525529,-1.0299495447584468,-0.9726586003320434,
+train,robustness,drop_top1pct_volume_products:secondary,ols,dropped 58 products,295002,5697.0,any_display,0.892240548363131,0.0122351276835214,0.8682550420041686,0.9162260547220936,
+train,robustness,drop_top1pct_volume_products:secondary,ols,dropped 58 products,295002,5697.0,any_mailer,0.6954388738741641,0.0679881720161975,0.5621561837045271,0.8287215640438012,
+train,robustness,drop_top1pct_volume_products:secondary,ols,dropped 58 products,295002,5697.0,share_stores_display,-0.8544689631696559,0.0214455522494806,-0.896510406721092,-0.8124275196182199,
+train,robustness,drop_top1pct_volume_products:secondary,ols,dropped 58 products,295002,5697.0,share_stores_mailer,-0.4649052361752318,0.0687332911573584,-0.5996486434179378,-0.3301618289325258,
+train,robustness,drop_top1pct_volume_products:secondary,ols,dropped 58 products,295002,5697.0,share_units_coupon,0.0016629526117635,0.0129749535162742,-0.0237728939214102,0.0270987991449373,
+train,robustness,drop_low_household_weeks:primary,ppml,dropped 8 weeks with < 1230 active households,275853,5755.0,lp,-1.286509182470594,0.0444991613333434,-1.3737259360261846,-1.1992924289150035,
+train,robustness,drop_low_household_weeks:primary,ppml,dropped 8 weeks with < 1230 active households,275853,5755.0,any_display,0.3586792971314021,0.0217491092914832,0.3160518262242694,0.4013067680385348,
+train,robustness,drop_low_household_weeks:primary,ppml,dropped 8 weeks with < 1230 active households,275853,5755.0,any_mailer,0.2779414951378942,0.0580885734375786,0.16408998328693,0.3917930069888584,
+train,robustness,drop_low_household_weeks:primary,ppml,dropped 8 weeks with < 1230 active households,275853,5755.0,share_stores_display,0.0837577259940899,0.045096509543449,-0.0046298085395371,0.1721452605277169,
+train,robustness,drop_low_household_weeks:primary,ppml,dropped 8 weeks with < 1230 active households,275853,5755.0,share_stores_mailer,0.1055001220361948,0.0513949955723438,0.0047677817288053,0.2062324623435842,
+train,robustness,drop_low_household_weeks:primary,ppml,dropped 8 weeks with < 1230 active households,275853,5755.0,share_units_coupon,0.1330590220801498,0.0499047063593324,0.0352475949568111,0.2308704492034885,
+train,robustness,drop_low_household_weeks:primary,ols,dropped 8 weeks with < 1230 active households,275853,5755.0,lp,-0.9209805674690412,0.0182693685210162,-0.9567954054819352,-0.8851657294561471,
+train,robustness,drop_low_household_weeks:primary,ols,dropped 8 weeks with < 1230 active households,275853,5755.0,any_display,0.8473267546708408,0.0137284687822726,0.8204137891221653,0.8742397202195163,
+train,robustness,drop_low_household_weeks:primary,ols,dropped 8 weeks with < 1230 active households,275853,5755.0,any_mailer,0.6640011565510462,0.0673169633119333,0.5320345735920686,0.7959677395100238,
+train,robustness,drop_low_household_weeks:primary,ols,dropped 8 weeks with < 1230 active households,275853,5755.0,share_stores_display,-0.776658093433459,0.0238644349098207,-0.8234413672823211,-0.729874819584597,
+train,robustness,drop_low_household_weeks:primary,ols,dropped 8 weeks with < 1230 active households,275853,5755.0,share_stores_mailer,-0.3928054834863473,0.068014363752447,-0.5261392337767182,-0.2594717331959764,
+train,robustness,drop_low_household_weeks:primary,ols,dropped 8 weeks with < 1230 active households,275853,5755.0,share_units_coupon,0.0164377904423612,0.0134118635754726,-0.0098545097460126,0.0427300906307351,
+train,robustness,drop_low_household_weeks:secondary,ppml,dropped 8 weeks with < 1230 active households,275853,5755.0,x_base,-0.6864562375767412,0.0701785569036814,-0.8240036815949517,-0.5489087935585307,
+train,robustness,drop_low_household_weeks:secondary,ppml,dropped 8 weeks with < 1230 active households,275853,5755.0,x_promo,-1.443214530056978,0.0433001798870811,-1.5280813231597627,-1.3583477369541934,
+train,robustness,drop_low_household_weeks:secondary,ppml,dropped 8 weeks with < 1230 active households,275853,5755.0,any_display,0.3458062966495682,0.0212377128057037,0.3041811444363838,0.3874314488627526,
+train,robustness,drop_low_household_weeks:secondary,ppml,dropped 8 weeks with < 1230 active households,275853,5755.0,any_mailer,0.2745545027845179,0.0511049984181916,0.1743905464548858,0.3747184591141499,
+train,robustness,drop_low_household_weeks:secondary,ppml,dropped 8 weeks with < 1230 active households,275853,5755.0,share_stores_display,0.0770099947571636,0.0439573343708214,-0.0091447974660311,0.1631647869803583,
+train,robustness,drop_low_household_weeks:secondary,ppml,dropped 8 weeks with < 1230 active households,275853,5755.0,share_stores_mailer,0.0671239713710925,0.0451197465015005,-0.0213091067634257,0.1555570495056108,
+train,robustness,drop_low_household_weeks:secondary,ppml,dropped 8 weeks with < 1230 active households,275853,5755.0,share_units_coupon,0.1046477233849086,0.0502321748276783,0.0061944698575395,0.2031009769122777,
+train,robustness,drop_low_household_weeks:secondary,ols,dropped 8 weeks with < 1230 active households,275853,5755.0,x_base,-0.3813725199919103,0.0311733576452205,-0.4424840331291735,-0.3202610068546471,
+train,robustness,drop_low_household_weeks:secondary,ols,dropped 8 weeks with < 1230 active households,275853,5755.0,x_promo,-1.0589913209958888,0.0149518921599054,-1.0883026568024472,-1.0296799851893303,
+train,robustness,drop_low_household_weeks:secondary,ols,dropped 8 weeks with < 1230 active households,275853,5755.0,any_display,0.8347939858767586,0.0134757933123675,0.8083763593439923,0.8612116124095248,
+train,robustness,drop_low_household_weeks:secondary,ols,dropped 8 weeks with < 1230 active households,275853,5755.0,any_mailer,0.6546865628244891,0.0665448929934724,0.5242335282598324,0.7851395973891458,
+train,robustness,drop_low_household_weeks:secondary,ols,dropped 8 weeks with < 1230 active households,275853,5755.0,share_stores_display,-0.7773893483819297,0.0234608925798588,-0.8233815273901406,-0.7313971693737189,
+train,robustness,drop_low_household_weeks:secondary,ols,dropped 8 weeks with < 1230 active households,275853,5755.0,share_stores_mailer,-0.4152738992216213,0.0672024351171173,-0.5470159638158549,-0.2835318346273876,
+train,robustness,drop_low_household_weeks:secondary,ols,dropped 8 weeks with < 1230 active households,275853,5755.0,share_units_coupon,-0.00297472983395,0.0134405876267083,-0.0293233399730973,0.0233738803051972,
+train,commodity_pooled,commodity_pooled,ppml,"commodities >= 60 active weeks, weeks 8-85",19104,248.0,lpi,-0.608088084541117,0.1032548095982578,-0.8104637925842431,-0.4057123764979908,
+train,commodity_pooled,commodity_pooled,ppml,"commodities >= 60 active weeks, weeks 8-85",19104,248.0,share_stores_display,0.938544013544208,0.1343238382006719,0.6752741284057053,1.2018138986827107,
+train,commodity_pooled,commodity_pooled,ppml,"commodities >= 60 active weeks, weeks 8-85",19104,248.0,share_stores_mailer,0.4378855076711408,0.048960232676456,0.3419252149505859,0.5338458003916957,
+train,commodity_pooled,commodity_pooled,ppml,"commodities >= 60 active weeks, weeks 8-85",19104,248.0,share_units_coupon,0.7495333736125412,0.1030822489203716,0.54749587828322,0.9515708689418624,
+train,commodity_pooled,commodity_pooled,ols,"commodities >= 60 active weeks, weeks 8-85",19104,248.0,lpi,-0.2863509623837906,0.0553788704622477,-0.3954260027715724,-0.1772759219960087,
+train,commodity_pooled,commodity_pooled,ols,"commodities >= 60 active weeks, weeks 8-85",19104,248.0,share_stores_display,0.4990500524092552,0.1235033626163977,0.2557960070853472,0.7423040977331632,
+train,commodity_pooled,commodity_pooled,ols,"commodities >= 60 active weeks, weeks 8-85",19104,248.0,share_stores_mailer,0.6798787151444168,0.0669456881739419,0.5480214999211761,0.8117359303676575,
+train,commodity_pooled,commodity_pooled,ols,"commodities >= 60 active weeks, weeks 8-85",19104,248.0,share_units_coupon,0.675765100316366,0.2023858263080337,0.2771429905802662,1.0743872100524658,
+train,bootstrap,commodity_pooled_ppml,ppml,commodities >= 60 weeks,19104,248.0,lpi,,0.1021270506,-0.803802468,-0.4045777518,cluster bootstrap B=500/500 seed=20240601
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.0499469328747256,0.1763660339273745,-0.3956243593723796,0.2957304936229283,anon C169; shrunk=-0.092
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.2033117672797773,0.3776059955319942,-0.943419518522486,0.5367959839629314,anon C166; shrunk=-0.267
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.6218432511110048,0.0991244356562235,-0.816127144997203,-0.4275593572248066,anon C038; shrunk=-0.609
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.3282732033107869,0.1710489350630022,-0.6635291160342714,0.0069827094126975,anon C223; shrunk=-0.332
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,76,,lpi,-0.2161815497477703,0.1077274838814816,-0.4273274181554742,-0.0050356813400663,anon C135; shrunk=-0.224
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.2048588784352995,0.148457912011468,-0.4958363859777769,0.0861186291071778,anon C186; shrunk=-0.220
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.0480647054571385,0.1048158194344428,-0.1573743006343693,0.2535037115486464,anon C197; shrunk=0.027
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.0754571103437146,0.25652232313514,-0.578240863688589,0.4273266430011597,anon C216; shrunk=-0.146
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.1907118554862817,0.3778422936191817,-0.931282750979878,0.5498590400073144,anon C047; shrunk=-0.260
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.1319236860815728,0.18725242745146,-0.4989384438864344,0.2350910717232888,anon C126; shrunk=-0.166
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.0753268430178399,0.2700584928668191,-0.6046414890368053,0.4539878030011255,anon C033; shrunk=-0.151
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.4898650564993756,0.367675519674779,-1.2105090750619425,0.2307789620631913,anon C163; shrunk=-0.434
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.6750096389173501,0.3475453500582403,-1.356198525031501,0.0061792471968008,anon C061; shrunk=-0.552
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.5015102496917634,0.3823296678627536,-1.2508763987027605,0.2478558993192336,anon C125; shrunk=-0.439
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,73,,lpi,0.1646359690973698,0.2686217343083902,-0.361862630147075,0.6911345683418146,anon C159; shrunk=0.024
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.8077360328811032,0.4743951745486493,-0.1220785092342494,1.737550574996456,anon C003; shrunk=0.184
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.3731480158387659,0.6815130773833468,-0.9626176158325936,1.7089136475101254,anon C084; shrunk=-0.140
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,77,,lpi,-0.2835369792174668,0.1008873327657637,-0.4812761514383638,-0.0857978069965698,anon C196; shrunk=-0.287
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.8819951988782975,0.3039882582565664,0.2861782126954272,1.4778121850611678,anon C060; shrunk=0.484
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.7950229798832565,0.4853929280151103,-1.7463931187928727,0.1563471590263597,anon C081; shrunk=-0.554
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.733638340413492,0.4103069162694295,-1.5378398963015738,0.0705632154745898,anon C129; shrunk=-0.558
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.306491761756502,0.315394359033222,-0.9246647054616172,0.3116811819486132,anon C198; shrunk=-0.323
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.5201858390103771,0.2907974183175473,-1.09014877891277,0.0497771008920157,anon C107; shrunk=-0.470
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-2.381487864838197,0.1736226855675476,-2.7217883285505904,-2.0411874011258035,anon C078; shrunk=-2.110
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,76,,lpi,-0.8933329116795314,0.4262721692378045,-1.7288263633856282,-0.0578394599734346,anon C201; shrunk=-0.633
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,71,,lpi,-0.2688945723073553,0.1346610912158228,-0.5328303110903682,-0.0049588335243425,anon C019; shrunk=-0.276
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.1979961125200713,0.3430182663517865,-0.4743196895294302,0.8703119145695729,anon C046; shrunk=-0.010
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.174476696975006,0.251399426317859,-0.6672195725580097,0.3182661786079976,anon C036; shrunk=-0.219
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.7084693196113014,0.2707096997587574,-1.239060331138466,-0.1778783080841368,anon C133; shrunk=-0.612
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-2.0610929130275166,0.3739395383267143,-2.7940144081478766,-1.3281714179071566,anon C034; shrunk=-1.348
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.0855701707164016,0.1691991965920342,-0.4172005960367886,0.2460602546039854,anon C227; shrunk=-0.120
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.7059996390304502,0.2775826231986704,-1.2500615804998445,-0.1619376975610561,anon C040; shrunk=-0.606
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.5387882315341137,0.1909740195689538,-0.9130973098892632,-0.1644791531789642,anon C222; shrunk=-0.510
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-1.4195451432530637,0.3708143854458523,-2.146341338726934,-0.6927489477791929,anon C180; shrunk=-0.979
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.2401842851898396,0.1203546306278172,0.0042892091593179,0.4760793612203613,anon C168; shrunk=0.199
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,77,,lpi,-0.2591495952732939,0.1258231025338738,-0.5057628762396867,-0.0125363143069011,anon C096; shrunk=-0.266
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.7751770457470963,0.2428695790334631,-1.251201420652684,-0.2991526708415086,anon C057; shrunk=-0.677
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.3463442370418376,0.6443915617371092,-1.6093516980465716,0.9166632239628962,anon C244; shrunk=-0.352
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.8589877653061756,0.5360996365829335,-1.9097430530087247,0.191767522396374,anon C006; shrunk=-0.558
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.7614683607085939,0.4034741524423976,-1.552277699495693,0.0293409780785053,anon C192; shrunk=-0.576
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-1.2715663301589226,0.1519709227827485,-1.5694293388131098,-0.9737033215047356,anon C193; shrunk=-1.174
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.4060310975749375,0.2254825084974494,-0.8479768142299384,0.0359146190800633,anon C177; shrunk=-0.395
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.295301049218989,0.1668163080320211,-0.0316589145237723,0.6222610129617504,anon C190; shrunk=0.214
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.7751920208905205,0.4000796217252855,-1.5593480794720802,0.0089640376910391,anon C212; shrunk=-0.585
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.3270078123591147,0.3913910789939394,-1.094134327187236,0.4401187024690066,anon C087; shrunk=-0.339
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.0055220726622523,0.2028684806566957,-0.4031442947493759,0.3921001494248712,anon C010; shrunk=-0.066
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.0760088131715984,0.1681632295836682,-0.2535911168123912,0.4056087431555881,anon C172; shrunk=0.021
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.5958480315560863,0.195948374374397,-0.9799068453299044,-0.2117892177822682,anon C079; shrunk=-0.556
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.8608640507873382,0.9602495336760012,-2.742953136792301,1.0212250352176242,anon C037; shrunk=-0.443
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.2046676380068747,0.4453049494072149,-1.077465338845016,0.6681300628312663,anon C031; shrunk=-0.280
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.7599039327816306,0.2593172146021921,0.2516421921613341,1.268165673401927,anon C132; shrunk=0.474
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,66,,lpi,0.5334896426377563,0.2508724350932201,0.0417796698550448,1.025199615420468,anon C105; shrunk=0.316
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-1.5667627375830269,0.3046040024920696,-2.163786582467483,-0.9697388926985704,anon C073; shrunk=-1.176
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.6402247757824626,0.6092531287378499,-1.8343609081086485,0.553911356543723,anon C211; shrunk=-0.453
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.2976042875398623,0.2195437851822949,-0.7279101064971604,0.1327015314174356,anon C120; shrunk=-0.309
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.3272530400554322,0.2319513631850953,-0.1273716317873546,0.7818777118982191,anon C001; shrunk=0.180
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.2599409143541035,0.2278706199727993,-0.1866855007925831,0.7065673295007902,anon C055; shrunk=0.131
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.4107640686568632,0.6324698307451245,-1.6504049369173073,0.8288767996035808,anon C143; shrunk=-0.373
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,76,,lpi,-0.8124852908454558,0.3304478762666996,-1.460163128328187,-0.1648074533627246,anon C080; shrunk=-0.648
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.3062899331353728,0.4797101413131268,-1.2465218101091011,0.6339419438383557,anon C110; shrunk=-0.333
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.0191323607927362,0.3716115853339177,-0.7092263464617424,0.747491068047215,anon C088; shrunk=-0.136
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.8025463697610203,0.1448497210520355,-1.08645182302301,-0.5186409164990307,anon C048; shrunk=-0.759
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.7000313879786658,0.3935866016117979,-1.4714611271377898,0.0713983511804581,anon C206; shrunk=-0.547
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.0113384177149266,0.1254921902419021,-0.2573031105890548,0.2346262751592014,anon C245; shrunk=-0.037
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,71,,lpi,-2.160445530888446,0.227025736580033,-2.6054159745853105,-1.7154750871915811,anon C083; shrunk=-1.782
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,63,,lpi,-0.1539012218522636,0.1590112643200476,-0.465563299919557,0.1577608562150297,anon C086; shrunk=-0.177
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.4311417904097853,0.3520873547636497,-1.1212330057465387,0.2589494249269681,anon C109; shrunk=-0.401
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.2218634207941946,0.384639752913942,-0.9757573365055208,0.5320304949171316,anon C239; shrunk=-0.279
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.1513846149435922,0.1317481558336641,-0.409611000377574,0.1068417704903895,anon C017; shrunk=-0.168
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,77,,lpi,-0.153695034364753,0.0744723653644882,-0.2996608704791499,-0.0077291982503561,anon C175; shrunk=-0.159
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.9661978513984752,0.1922068768115811,-1.3429233299491743,-0.5894723728477762,anon C101; shrunk=-0.869
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.1386099767322403,0.1917796835849159,-0.5144981565586755,0.2372782030941949,anon C179; shrunk=-0.173
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.6944037822695448,0.1142701499981293,-0.9183732762658784,-0.4704342882732114,anon C030; shrunk=-0.673
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.1860974399210554,0.4425357252119964,-1.0534674613365684,0.6812725814944576,anon C229; shrunk=-0.271
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-1.1363504676703895,0.2993629009747901,-1.7231017535809785,-0.549599181759801,anon C199; shrunk=-0.890
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.0385699529926567,0.2891526451435909,-0.605309137474095,0.5281692314887815,anon C164; shrunk=-0.134
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-1.2888341713860345,0.7476497466851311,-2.754227674888891,0.1765593321168226,anon C215; shrunk=-0.596
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.2286783487006686,0.2246878895401849,-0.6690666121994311,0.2117099147980938,anon C136; shrunk=-0.255
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,75,,lpi,-0.5143967082511909,0.151942252911337,-0.8122035239574115,-0.2165898925449703,anon C195; shrunk=-0.497
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.0761774454323118,0.4008117716679863,-0.8617685179015652,0.7094136270369414,anon C181; shrunk=-0.202
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.6516090543197728,0.5774613541546664,-1.7834333084629188,0.4802151998233732,anon C053; shrunk=-0.464
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-1.0250453142395053,0.4462243443317247,-1.8996450291296856,-0.1504455993493249,anon C187; shrunk=-0.686
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.95853208317953,0.2007388957490711,-1.3519803188477095,-0.5650838475113507,anon C183; shrunk=-0.855
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.0432243661991845,0.459745624232109,-0.857877057295749,0.9443257896941182,anon C209; shrunk=-0.164
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.3514223190685154,0.2952451130651922,-0.9301027406762922,0.2272581025392613,anon C208; shrunk=-0.352
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.6151802667392221,0.2687821563533931,-1.1419932931918728,-0.0883672402865715,anon C066; shrunk=-0.545
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.3879699354845332,0.2645412312943782,-0.1305308778524481,0.9064707488215143,anon C108; shrunk=0.192
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,68,,lpi,-0.2260508367132947,0.0941033009744432,-0.4104933066232035,-0.041608366803386,anon C121; shrunk=-0.232
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,77,,lpi,0.2082000229943272,0.1847644237788334,-0.1539382476121861,0.5703382936008408,anon C056; shrunk=0.124
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-1.371355411146775,0.3450084897934877,-2.047572051142011,-0.6951387711515391,anon C063; shrunk=-0.986
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.1280895340785322,0.2088957047413079,-0.2813460472144313,0.5375251153714959,anon C161; shrunk=0.040
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.3794414281427299,0.1489547536654004,-0.6713927453269146,-0.0874901109585451,anon C116; shrunk=-0.377
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.2385362136579499,0.117768304322066,-0.4693620901291993,-0.0077103371867006,anon C165; shrunk=-0.246
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.3328158439544563,0.3387687467095173,-0.9968025875051104,0.3311708995961975,anon C224; shrunk=-0.341
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.082331415570285,0.1353269488876477,-0.1829094042495045,0.3475722353900746,anon C051; shrunk=0.045
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-1.3605285386807475,0.26041444955796,-1.870940859814349,-0.8501162175471462,anon C200; shrunk=-1.101
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,76,,lpi,-0.0864205206176646,0.1131062123451621,-0.3081086968141824,0.1352676555788531,anon C148; shrunk=-0.103
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,66,,lpi,-0.0564008245629694,0.1420836923912266,-0.3348848616497737,0.2220832125238347,anon C068; shrunk=-0.084
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,74,,lpi,0.0773673937683066,0.226865826755222,-0.3672896266719285,0.5220244142085417,anon C102; shrunk=-0.013
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,69,,lpi,-0.3234664448350379,0.1217315720306217,-0.5620603260150565,-0.0848725636550194,anon C089; shrunk=-0.326
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.0358486300887648,0.1193921524080062,-0.2698572488084569,0.1981599886309273,anon C028; shrunk=-0.058
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.8158151118181773,0.553211962356355,-0.2684803344002784,1.900110558036633,anon C154; shrunk=0.100
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-1.523648283389733,0.1956536501228533,-1.9071294376305248,-1.14016712914894,anon C134; shrunk=-1.332
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.4488605615964888,0.1716945333143283,-0.7853818468925723,-0.1123392763004053,anon C119; shrunk=-0.436
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.870523062914581,0.4074055965154204,-1.669038032084805,-0.072008093744357,anon C205; shrunk=-0.633
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,77,,lpi,-1.0162164746736484,0.4049621174422249,-1.8099422248604091,-0.2224907244868875,anon C100; shrunk=-0.714
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.4929867304432316,0.3303275992137775,-1.1404288249022354,0.1544553640157723,anon C042; shrunk=-0.443
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,61,,lpi,-0.3518690810221881,0.1774773169681942,-0.6997246222798488,-0.0040135397645274,anon C050; shrunk=-0.352
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.5580646653962438,0.2818725089415803,-1.1105347829217411,-0.0055945478707463,anon C082; shrunk=-0.499
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.4573732969860044,0.6548268702128939,-0.8260873686312676,1.7408339626032765,anon C124; shrunk=-0.101
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.0797940710735416,0.3545750668369256,-0.7747612020739157,0.6151730599268325,anon C171; shrunk=-0.188
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.078643619308527,0.4054623570812102,-0.7160626005706451,0.8733498391876992,anon C149; shrunk=-0.120
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.2812673546406091,0.4176920285920442,-0.5374090213997974,1.0999437306810158,anon C016; shrunk=-0.019
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-1.3567817702009106,0.4952347380796592,-2.3274418568370425,-0.3861216835647786,anon C113; shrunk=-0.798
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,3.247603674197044,2.162558553884763,-0.991011091417092,7.4862184398111795,anon C069; shrunk=-0.211
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-1.0977668024141047,0.6090595493844504,-2.291523519207628,0.095989914379418,anon C076; shrunk=-0.610
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.5333339288104475,0.5511889389119554,-0.5469963914569851,1.61366424907788,anon C020; shrunk=-0.008
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.9776553193907463,0.5102841280039203,-1.9778122102784303,0.0225015714969375,anon C072; shrunk=-0.621
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-1.323991394392796,0.5214629493999206,-2.3460587752166404,-0.3019240135689516,anon C111; shrunk=-0.759
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-1.6764072624506872,0.2585967983294333,-2.1832569871763763,-1.1695575377249978,anon C210; shrunk=-1.338
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,62,,lpi,-1.1392555224444918,0.4376532185976346,-1.997055830895856,-0.281455213993128,anon C123; shrunk=-0.750
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-1.1579036627285026,0.1504116449468351,-1.4527104868242997,-0.8630968386327058,anon C228; shrunk=-1.074
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-1.647057168461704,1.955576337387017,-5.479986789740257,2.1858724528168487,anon C247; shrunk=-0.417
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.127146743353675,0.2117744301491416,-0.5422246264459926,0.2879311397386426,anon C058; shrunk=-0.170
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.1529387958051232,0.1517403005277508,-0.4503497848395149,0.1444721932292683,anon C214; shrunk=-0.174
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.1521087485827059,0.1952879825467077,-0.5348731943742531,0.2306556972088412,anon C130; shrunk=-0.185
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.2029549435707678,0.2188663268632596,-0.6319329442227567,0.226023057081221,anon C007; shrunk=-0.233
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.0772784076010539,0.4188382060940783,-0.8982012915454474,0.7436444763433396,anon C138; shrunk=-0.209
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.0200108346414772,0.1916441089828268,-0.3556116189648633,0.3956332882478179,anon C189; shrunk=-0.039
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.0417410376020948,0.1597858532720547,-0.354921310015322,0.2714392348111324,anon C035; shrunk=-0.078
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.2048928600436249,0.1872994806926974,-0.1622141221140621,0.571999842201312,anon C141; shrunk=0.119
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.9715732190885276,0.4738954950948645,-1.900408389474462,-0.0427380487025932,anon C237; shrunk=-0.641
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-2.1160907904556066,0.3226269909697125,-2.748439692756243,-1.48374188815497,anon C204; shrunk=-1.502
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.1405994722341044,0.1662874145851641,-0.1853238603528172,0.4665228048210261,anon C117; shrunk=0.079
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-1.82142434584518,0.3697231351778081,-2.546081690793684,-1.096767000896676,anon C241; shrunk=-1.216
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.0278912351154301,0.5451887895041472,-1.0964612625435586,1.0406787923126983,anon C218; shrunk=-0.225
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.0197046751826055,0.1400233600532313,-0.2941504608869388,0.2547411105217277,anon C021; shrunk=-0.050
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.0159551978038316,0.3071793977326919,-0.5861164217522444,0.6180268173599076,anon C157; shrunk=-0.105
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.6212109232233649,0.2281395402551576,-1.0683644221234738,-0.174057424323256,anon C240; shrunk=-0.565
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.3689011387318193,0.2028203132715166,-0.7664289527439918,0.0286266752803532,anon C074; shrunk=-0.366
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,76,,lpi,0.1289007636874817,0.1444360970204567,-0.1541939864726133,0.4119955138475769,anon C153; shrunk=0.082
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-1.152178381279377,0.3068578592478611,-1.7536197854051851,-0.5507369771535695,anon C178; shrunk=-0.892
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.6666583846237186,0.1853341064473965,-1.0299132332606158,-0.3034035359868214,anon C000; shrunk=-0.620
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.5796238430814812,0.2170702137440683,-1.0050814620198552,-0.1541662241431072,anon C090; shrunk=-0.536
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.0232792182229251,0.1255285691682679,-0.2693152137927304,0.2227567773468799,anon C137; shrunk=-0.048
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,65,,lpi,-0.1775627298458358,0.1201580126906874,-0.4130724347195832,0.0579469750279115,anon C202; shrunk=-0.190
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.2189376506856939,0.3113768801504272,-0.8292363357805314,0.3913610344091435,anon C231; shrunk=-0.264
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.6020285765330236,0.3385459251708595,-0.061521436801861,1.2655785898679082,anon C188; shrunk=0.247
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-1.3228385710002817,0.1850799223397178,-1.6855952187861285,-0.9600819232144344,anon C246; shrunk=-1.178
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.6564536059960906,0.3389506322734755,-1.3207968452521026,0.0078896332599213,anon C151; shrunk=-0.544
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.685801585862635,0.4970622847401986,-1.6600436639534242,0.2884404922281544,anon C043; shrunk=-0.501
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.817815305499983,0.5966571501917257,-0.3516327088757993,1.9872633198757652,anon C144; shrunk=0.060
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.0604166248218946,0.1696903549969988,-0.272176470972223,0.3930097206160123,anon C091; shrunk=0.007
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.9126496572633618,0.4413111506377945,-1.777619512513439,-0.0476798020132844,anon C045; shrunk=-0.634
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-1.1870024109545851,0.4121976961614221,-1.9949098954309723,-0.3790949264781977,anon C207; shrunk=-0.799
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.8322245737961731,0.6118633579897158,-2.031476755456016,0.3670276078636698,anon C032; shrunk=-0.518
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-2.762621114300788,0.4272787628444637,-3.6000874894759374,-1.9251547391256392,anon C146; shrunk=-1.597
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.6375544786554305,0.1937608864965227,-1.017325816188615,-0.2577831411222459,anon C015; shrunk=-0.592
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.1230424275881932,0.1634641903762088,-0.197347385549176,0.4434322407255626,anon C011; shrunk=0.065
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.0891389014187231,0.5019949979797108,-0.8947712946215101,1.0730490974589564,anon C203; shrunk=-0.161
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.1433243625015223,0.6374275669653892,-1.1060336687506405,1.3926823937536852,anon C217; shrunk=-0.193
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.272822486989159,0.3272723446347234,-0.3686313084948987,0.9142762824732168,anon C014; shrunk=0.050
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.9319587473433968,0.3326931948002735,-1.584037409151933,-0.2798800855348606,anon C140; shrunk=-0.723
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,63,,lpi,0.0335341877128751,0.3515312162987914,-0.6554669962327561,0.7225353716585065,anon C213; shrunk=-0.117
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.2262314019380544,0.2467492520471144,-0.7098599359503988,0.2573971320742898,anon C232; shrunk=-0.257
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.0879496914050652,0.379205286880149,-0.8311920536901574,0.6552926708800269,anon C155; shrunk=-0.201
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.1634693513863676,0.2467236624024311,-0.3201090269223974,0.6470477296951327,anon C243; shrunk=0.040
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.0568000206388388,0.3100631592378996,-0.6645238127451221,0.5509237714674444,anon C029; shrunk=-0.155
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.2910353867818356,0.1959165343122264,-0.0929610204701281,0.6750317940337995,anon C044; shrunk=0.185
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.8041264747575696,0.5524173542049556,-1.8868644889992827,0.2786115394841435,anon C122; shrunk=-0.530
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.5381478982545412,0.2276844329346177,-0.984409386806392,-0.0918864097026905,anon C012; shrunk=-0.500
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,62,,lpi,-0.030458665141934,0.0965626562309743,-0.2197214713546438,0.1588041410707756,anon C085; shrunk=-0.045
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,75,,lpi,-0.1889314395452539,0.3806360046066501,-0.9349780085742884,0.5571151294837804,anon C235; shrunk=-0.260
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.0245365311211382,0.4285754272594169,-0.8154713063073189,0.8645443685495953,anon C067; shrunk=-0.160
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.1436223475400949,0.2282826772629931,-0.5910563949755615,0.3038116998953717,anon C027; shrunk=-0.188
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,72,,lpi,1.1403377505477712,0.4151837087581747,0.3265776813817488,1.9540978197137937,anon C118; shrunk=0.438
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.7103718624296897,0.5566207099873454,-1.8013484540048867,0.3806047291455072,anon C176; shrunk=-0.492
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.4020046920345423,0.2532680487977884,-0.8984100676782076,0.0944006836091229,anon C104; shrunk=-0.390
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.1417947853616957,0.1196655192737058,-0.376339203138159,0.0927496324147676,anon C225; shrunk=-0.156
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,61,,lpi,-0.0648291799169986,0.1312683349181853,-0.3221151163566418,0.1924567565226445,anon C008; shrunk=-0.088
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.4012107313499871,0.1968559328685539,-0.7870483597723528,-0.0153731029276215,anon C070; shrunk=-0.393
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.1519648316652263,0.3238353480352454,-0.4827524504838547,0.7866821138143074,anon C233; shrunk=-0.025
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.2266469496589713,0.3473863958843162,-0.9075242855922312,0.4542303862742884,anon C095; shrunk=-0.276
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.3895257566299184,0.1027212420546821,-0.5908593910570955,-0.1881921222027414,anon C226; shrunk=-0.388
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.6267430626384618,0.3674040346472538,-1.3468549705470794,0.0933688452701557,anon C024; shrunk=-0.515
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.097159162483002,0.2399131838071836,-0.5673890027450821,0.3730706777790779,anon C156; shrunk=-0.156
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-1.0645436224121,0.2708259746970983,-1.595362532818413,-0.5337247120057873,anon C219; shrunk=-0.870
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.0663164284481649,0.1053768954710511,-0.1402222866750952,0.2728551435714251,anon C013; shrunk=0.044
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.3264758768482285,0.6188947238139809,-1.539509535523631,0.8865577818271739,anon C041; shrunk=-0.345
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.3167802755369564,0.1980052373512721,-0.7048705407454499,0.071309989671537,anon C018; shrunk=-0.323
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.9298061114841242,0.2277082722589392,-1.376114325111645,-0.4834978978566033,anon C147; shrunk=-0.809
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.6585631488187329,0.236742558025409,0.194547735088931,1.1225785625485347,anon C127; shrunk=0.432
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.6587796081398887,0.1103870738468527,-0.87513827287972,-0.4424209434000573,anon C242; shrunk=-0.641
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.6060549538416268,0.3505464624174787,-1.293126020179885,0.0810161124966315,anon C170; shrunk=-0.509
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-1.351072834207756,0.2148099274072107,-1.772100291925889,-0.930045376489623,anon C071; shrunk=-1.160
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-1.2522177577136293,0.199016933062276,-1.6422909465156903,-0.8621445689115682,anon C230; shrunk=-1.100
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-1.8130411794835088,0.2324208280332644,-2.268586002428707,-1.3574963565383102,anon C112; shrunk=-1.496
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.7871835760301782,0.2955538891770616,0.2078979532431373,1.366469198817219,anon C139; shrunk=0.434
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,76,,lpi,0.1223445555841639,0.4631736006804159,-0.7854757017494512,1.030164812917779,anon C092; shrunk=-0.128
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.4137148131413458,0.272223404260001,-0.1198430592082561,0.9472726854909476,anon C094; shrunk=0.202
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.6078401976254979,0.287650780803712,-1.1716357280007736,-0.0440446672502222,anon C052; shrunk=-0.532
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.2504711541592176,0.2339546741914481,-0.2080800072560207,0.7090223155744559,anon C005; shrunk=0.118
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.2343715869312309,0.417490530931059,-1.0526530275561066,0.5839098536936447,anon C142; shrunk=-0.291
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.1326788166245476,0.1026235093707816,-0.0684632617421843,0.3338208949912795,anon C162; shrunk=0.108
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.9048676983135968,0.5095427193358298,-1.9035714282118232,0.0938360315846295,anon C039; shrunk=-0.590
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.6385461308118142,0.4100646925589906,-1.4422729282274358,0.1651806666038073,anon C022; shrunk=-0.507
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,1.4079122038288243,0.3883976065785147,0.6466528949349356,2.1691715127227136,anon C075; shrunk=0.638
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.1329736729335763,0.2028747470674221,-0.5306081771857237,0.264660831318571,anon C128; shrunk=-0.172
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,73,,lpi,1.240105130983293,1.7183254265559875,-2.127812705066443,4.608022967033029,anon C152; shrunk=-0.256
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.1300169177436423,0.1453521175605069,-0.4149070681622359,0.1548732326749513,anon C004; shrunk=-0.152
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,68,,lpi,0.0708682523886642,0.2128774294571928,-0.3463715093474337,0.4881080141247622,anon C131; shrunk=-0.009
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,1.1427036309656553,0.5943025625582686,-0.0221293916485512,2.307536653579862,anon C221; shrunk=0.177
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.546800676824273,0.2011107409174338,-0.9409777290224433,-0.1526236246261027,anon C064; shrunk=-0.514
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.7959583568100114,0.2094822947305071,0.3853730591382174,1.2065436544818051,anon C185; shrunk=0.584
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.2707096137461465,0.1433789613773313,-0.551732378045716,0.0103131505534228,anon C099; shrunk=-0.279
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.1867034798521843,0.5423936127996277,-1.2497949609394547,0.8763880012350859,anon C103; shrunk=-0.288
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.205741678494756,0.0811675287610462,-0.3648300348664067,-0.0466533221231053,anon C098; shrunk=-0.211
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.9391280007744538,0.1392079204655362,-1.2119755248869049,-0.6662804766620027,anon C234; shrunk=-0.886
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.7999090998545375,0.3416258149202191,-1.469495697098167,-0.1303225026109079,anon C065; shrunk=-0.633
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.1452047160211718,0.5374862948533334,-0.9082684218913616,1.1986778539337053,anon C167; shrunk=-0.153
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.2285610962792224,0.3270664113338731,-0.412489069935169,0.8696112624936138,anon C062; shrunk=0.022
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.1262930771611699,0.2666880426100102,-0.6490016406767899,0.3964154863544501,anon C184; shrunk=-0.187
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.17914236174503,0.1927613788612568,-0.5569546643130934,0.1986699408230333,anon C236; shrunk=-0.207
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.2893482534687004,0.0951158173665331,-0.4757752555071054,-0.1029212514302954,anon C097; shrunk=-0.292
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,76,,lpi,0.5492925363034142,0.5291588138688634,-0.4878587388795581,1.5864438114863866,anon C025; shrunk=0.016
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.9385325118170263,0.5580639989976236,-0.1552729262183156,2.0323379498523684,anon C002; shrunk=0.143
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,61,,lpi,-0.463305110244405,0.2551653155866207,-0.9634291287941816,0.0368189083053716,anon C093; shrunk=-0.436
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.7483543327953763,0.4464168698720144,-1.6233313977445245,0.1266227321537718,anon C077; shrunk=-0.549
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-1.2622290889575616,0.6822430379543748,-2.599425443348136,0.0749672654330129,anon C158; shrunk=-0.622
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.1503530272838947,0.7034204818310595,-1.228351117104982,1.5290571716727714,anon C106; shrunk=-0.212
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.7658287583090246,0.3125074819297981,-1.378343422891429,-0.1533140937266203,anon C145; shrunk=-0.628
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.0233595727893424,0.0821907226963507,-0.1377342436955051,0.1844533892741899,anon C174; shrunk=0.011
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.1488804782703206,0.1972382974848617,-0.5354675413406497,0.2377065848000084,anon C115; shrunk=-0.183
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.3267498622765256,0.1627942452707868,-0.6458265830072679,-0.0076731415457833,anon C059; shrunk=-0.330
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,0.2106157391463997,0.2479397382972303,-0.2753461479161716,0.6965776262089711,anon C049; shrunk=0.075
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.577420641153445,0.1195717151063928,-0.811781202761975,-0.3430600795449151,anon C173; shrunk=-0.562
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,2.6855091287137167,0.9803598018884304,0.7640039170123933,4.60701434041504,anon C238; shrunk=0.157
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,76,,lpi,0.029699580411205,0.1671828064159589,-0.2979787201640745,0.3573778809864846,anon C160; shrunk=-0.019
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.7289973991202885,0.2042084410842901,-1.1292459436454971,-0.3287488545950798,anon C150; shrunk=-0.663
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.6156048670152283,0.2323920810129099,-1.0710933458005318,-0.1601163882299248,anon C009; shrunk=-0.559
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.5188348951088531,0.2739811631248667,-1.055837974833592,0.0181681846158857,anon C054; shrunk=-0.473
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.1273893154800211,0.2174394672909392,-0.553570671370262,0.2987920404102197,anon C194; shrunk=-0.172
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.9302353852475124,0.346786742012626,-1.6099373995922592,-0.2505333709027652,anon C220; shrunk=-0.710
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-1.253030068782182,0.1934729591271157,-1.632237068671329,-0.8738230688930352,anon C191; shrunk=-1.108
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-2.041045630119499,0.4916002885553143,-3.004582195687915,-1.0775090645510828,anon C114; shrunk=-1.107
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-1.35379622013442,0.4573002557769932,-2.2501047214573267,-0.4574877188115133,anon C023; shrunk=-0.836
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.5784123495365557,0.6001756447285553,-1.754756613204524,0.5979319141314127,anon C026; shrunk=-0.433
+train,commodity_each,per_commodity_ppml,ppml,weeks 8-85,78,,lpi,-0.6084860391732538,0.3947274861602247,-1.3821519120472945,0.1651798337007866,anon C182; shrunk=-0.496
+validation,primary_secondary,main:primary,ppml,"validation weeks, train primary set",30083,5458.0,lp,-1.3731487722336633,0.07241676544017604,-1.5150830243732933,-1.2312145200940332,
+validation,primary_secondary,main:primary,ppml,"validation weeks, train primary set",30083,5458.0,any_display,0.3666019079895747,0.030899671048901966,0.30603966559959184,0.4271641503795576,
+validation,primary_secondary,main:primary,ppml,"validation weeks, train primary set",30083,5458.0,any_mailer,0.04364136210843516,0.07486941068629614,-0.10309998638044357,0.1903827105973139,
+validation,primary_secondary,main:primary,ppml,"validation weeks, train primary set",30083,5458.0,share_stores_display,-0.10554647278418577,0.06574607519226362,-0.23440641228588482,0.023313466717513276,
+validation,primary_secondary,main:primary,ppml,"validation weeks, train primary set",30083,5458.0,share_stores_mailer,0.2677815629644649,0.0804294583788298,0.11014272124589522,0.42542040468303466,
+validation,primary_secondary,main:primary,ppml,"validation weeks, train primary set",30083,5458.0,share_units_coupon,0.02723563318600348,0.05276294673603491,-0.07617784213483017,0.1306491085068371,
+validation,primary_secondary,main:primary,ols,"validation weeks, train primary set",30083,5458.0,lp,-0.8606179281049109,0.04734112844421815,-0.9534261743919186,-0.7678096818179032,
+validation,primary_secondary,main:primary,ols,"validation weeks, train primary set",30083,5458.0,any_display,0.8119692743727167,0.025666100780327925,0.761653071934607,0.8622854768108265,
+validation,primary_secondary,main:primary,ols,"validation weeks, train primary set",30083,5458.0,any_mailer,0.4619235232572629,0.11096308395405352,0.24438985722925205,0.6794571892852737,
+validation,primary_secondary,main:primary,ols,"validation weeks, train primary set",30083,5458.0,share_stores_display,-0.8587279706999318,0.04617795854034063,-0.9492559215554545,-0.7682000198444091,
+validation,primary_secondary,main:primary,ols,"validation weeks, train primary set",30083,5458.0,share_stores_mailer,-0.21123367900086765,0.1116398702218516,-0.43009412680805553,0.007626768806320239,
+validation,primary_secondary,main:primary,ols,"validation weeks, train primary set",30083,5458.0,share_units_coupon,0.071878412535295,0.04081731816411706,-0.008140459879504555,0.15189728495009458,
+validation,primary_secondary,main:secondary,ppml,"validation weeks, train primary set",30083,5458.0,x_base,-0.13845098541933218,0.09570524501714386,-0.32602981878451565,0.049127847945851316,
+validation,primary_secondary,main:secondary,ppml,"validation weeks, train primary set",30083,5458.0,x_promo,-1.5903314525005072,0.07251537653822393,-1.732458978840787,-1.4482039261602275,
+validation,primary_secondary,main:secondary,ppml,"validation weeks, train primary set",30083,5458.0,any_display,0.35797443671121637,0.03126447053063558,0.2966972004754567,0.419251672946976,
+validation,primary_secondary,main:secondary,ppml,"validation weeks, train primary set",30083,5458.0,any_mailer,0.04861198303234306,0.06522728082653104,-0.07923113819713781,0.17645510426182395,
+validation,primary_secondary,main:secondary,ppml,"validation weeks, train primary set",30083,5458.0,share_stores_display,-0.13018150716180923,0.06461825165543515,-0.2568309531504079,-0.0035320611732105878,
+validation,primary_secondary,main:secondary,ppml,"validation weeks, train primary set",30083,5458.0,share_stores_mailer,0.21260210994800646,0.071125307771175,0.07319906832717663,0.35200515156883627,
+validation,primary_secondary,main:secondary,ppml,"validation weeks, train primary set",30083,5458.0,share_units_coupon,0.006315506921920468,0.054305356858718276,-0.10012103668876259,0.11275205053260352,
+validation,primary_secondary,main:secondary,ols,"validation weeks, train primary set",30083,5458.0,x_base,0.02583303880773184,0.05804979544109239,-0.08796863616829645,0.13963471378376013,
+validation,primary_secondary,main:secondary,ols,"validation weeks, train primary set",30083,5458.0,x_promo,-1.1231632491101189,0.04136406916309737,-1.2042539802456251,-1.0420725179746126,
+validation,primary_secondary,main:secondary,ols,"validation weeks, train primary set",30083,5458.0,any_display,0.7962977020594638,0.02523289582649996,0.7468307610008117,0.8457646431181159,
+validation,primary_secondary,main:secondary,ols,"validation weeks, train primary set",30083,5458.0,any_mailer,0.42055123304851094,0.10705942666167986,0.21067035433919645,0.6304321117578254,
+validation,primary_secondary,main:secondary,ols,"validation weeks, train primary set",30083,5458.0,share_stores_display,-0.8622027071567472,0.04492690745366168,-0.9502780790141384,-0.774127335299356,
+validation,primary_secondary,main:secondary,ols,"validation weeks, train primary set",30083,5458.0,share_stores_mailer,-0.22141501359036678,0.10783245864921746,-0.4328113556070602,-0.010018671573673393,
+validation,primary_secondary,main:secondary,ols,"validation weeks, train primary set",30083,5458.0,share_units_coupon,0.042238566124496946,0.04109300854835134,-0.03832077378484329,0.12279790603383718,
+validation,commodity_pooled,commodity_pooled,ppml,"validation weeks, train commodity set",1940,248.0,lpi,-0.13888927070277926,0.10015140183924626,-0.3351824113089005,0.05740386990334198,
+validation,commodity_pooled,commodity_pooled,ppml,"validation weeks, train commodity set",1940,248.0,share_stores_display,0.9224886260382761,0.2363143341328487,0.45932104210732816,1.385656209969224,
+validation,commodity_pooled,commodity_pooled,ppml,"validation weeks, train commodity set",1940,248.0,share_stores_mailer,0.4242985056645323,0.06499780509379817,0.29690514860653383,0.5516918627225308,
+validation,commodity_pooled,commodity_pooled,ppml,"validation weeks, train commodity set",1940,248.0,share_units_coupon,0.11306293373226753,0.2984577139219607,-0.4719034364629343,0.6980293039274693,
+validation,commodity_pooled,commodity_pooled,ols,"validation weeks, train commodity set",1940,248.0,lpi,-0.14413979548905306,0.06701961018355536,-0.276142608593161,-0.012136982384945122,
+validation,commodity_pooled,commodity_pooled,ols,"validation weeks, train commodity set",1940,248.0,share_stores_display,1.1085193620647942,0.26861160993126015,0.5794579717308661,1.6375807523987223,
+validation,commodity_pooled,commodity_pooled,ols,"validation weeks, train commodity set",1940,248.0,share_stores_mailer,0.41462521920391926,0.08153109322302518,0.25404037498569143,0.5752100634221471,
+validation,commodity_pooled,commodity_pooled,ols,"validation weeks, train commodity set",1940,248.0,share_units_coupon,-0.07947841305380543,0.24645290164380115,-0.5648956845889701,0.4059388584813593,
