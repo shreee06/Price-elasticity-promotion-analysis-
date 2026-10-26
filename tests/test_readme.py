@@ -26,3 +26,11 @@ def test_no_causal_wording_in_readme():
     txt = (C.ROOT / "README.md").read_text().lower()
     for bad in ["causes", "caused", "causal effect", "impact of", "leads to", "drives"]:
         assert bad not in txt.replace("not a causal effect", "").replace("no causal", ""), bad
+
+
+def test_readme_embeds_small_screenshots():
+    txt = (C.ROOT / "README.md").read_text()
+    for img in ["results_elasticity.png", "results_out_of_sample.png", "whatif_simulator.png"]:
+        path = C.ROOT / "docs" / "images" / img
+        assert f"(docs/images/{img})" in txt
+        assert path.exists() and path.stat().st_size < 1_000_000, img

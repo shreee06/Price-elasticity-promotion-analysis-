@@ -146,6 +146,17 @@ def render():
     a("`streamlit run app/streamlit_app.py` opens a Results page (estimates, department chart, robustness, stability, out-of-sample and test results) and a What-if page. "
       "Both read only the committed files in `evals/results/`; no data is needed.")
     a("")
+    for img, alt, cap in [
+            ("results_elasticity.png", "Results page: elasticity table and department chart",
+             "Results page: primary and split elasticities and median shrunk elasticity by department (screenshot of the local Streamlit app, which reads only committed result files)."),
+            ("results_out_of_sample.png", "Results page: out-of-sample validation and test table",
+             "Out-of-sample check on validation and test weeks (screenshot of the local Streamlit app, which reads only committed result files)."),
+            ("whatif_simulator.png", "What-if page: not-reliable flag, elasticity interval and ranked commodities",
+             "What-if page: elasticity interval and the not-reliable flag for a commodity, and the most reliable commodities at 20% depth (screenshot of the local Streamlit app, which reads only committed result files).")]:
+        a(f"![{alt}](docs/images/{img})")
+        a("")
+        a(f"*{cap}*")
+        a("")
     a("## Limitations")
     a("")
     a("- Observational data: prices and promotions respond to demand and season and are not randomised. No causal claim is made.")

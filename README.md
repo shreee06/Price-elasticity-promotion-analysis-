@@ -75,6 +75,18 @@ For a commodity (anonymised label) and a discount depth inside its observed 5th-
 
 `streamlit run app/streamlit_app.py` opens a Results page (estimates, department chart, robustness, stability, out-of-sample and test results) and a What-if page. Both read only the committed files in `evals/results/`; no data is needed.
 
+![Results page: elasticity table and department chart](docs/images/results_elasticity.png)
+
+*Results page: primary and split elasticities and median shrunk elasticity by department (screenshot of the local Streamlit app, which reads only committed result files).*
+
+![Results page: out-of-sample validation and test table](docs/images/results_out_of_sample.png)
+
+*Out-of-sample check on validation and test weeks (screenshot of the local Streamlit app, which reads only committed result files).*
+
+![What-if page: not-reliable flag, elasticity interval and ranked commodities](docs/images/whatif_simulator.png)
+
+*What-if page: elasticity interval and the not-reliable flag for a commodity, and the most reliable commodities at 20% depth (screenshot of the local Streamlit app, which reads only committed result files).*
+
 ## Limitations
 
 - Observational data: prices and promotions respond to demand and season and are not randomised. No causal claim is made.
@@ -95,7 +107,7 @@ For a commodity (anonymised label) and a discount depth inside its observed 5th-
 | Out-of-sample, validation | 4.2 | 467 |
 | Test evaluation | 6.1 | 618 |
 
-Peak memory is the main process's high-water mark from /proc; the product bootstrap ran in separate worker processes (3 at a time, each short-lived). Runtimes are wall-clock on a 7.5 GB laptop. Panel build/convert timings were not recorded. All scripts run a 1 GB available-memory watchdog. The suite has 27 test functions (synthetic data only).
+Peak memory is the main process's high-water mark from /proc; the product bootstrap ran in separate worker processes (3 at a time, each short-lived). Runtimes are wall-clock on a 7.5 GB laptop. Panel build/convert timings were not recorded. All scripts run a 1 GB available-memory watchdog. The suite has 28 test functions (synthetic data only).
 
 ## Reproduce
 

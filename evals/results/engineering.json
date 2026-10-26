@@ -18,6 +18,6 @@
     "runtime_seconds": 6.1,
     "peak_memory_mb": 618
   },
-  "test_functions": 27,
+  "test_functions": 28,
   "note": "Peak memory is the main process's high-water mark from /proc; the product bootstrap ran in separate worker processes (3 at a time, each short-lived). Runtimes are wall-clock on a 7.5 GB laptop. Panel build/convert timings were not recorded."
 }
